@@ -4,15 +4,16 @@ import Title from "../components/Title";
 import rocketNotes from "../assets/rocket-notes.webp";
 import costs from "../assets/costs.webp";
 import photoblog from "../assets/photo-blog.webp";
+import donalds from "../assets/donalds.webp"
 function Projects() {
   return (
-    <Container color="bg-neutral-950">
+    <Container id="projects" color="bg-neutral-950">
       <Title title="Projetos:" />
 
       <section className="grid gap-4 flex-wrap py-8 justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
         <ProjectCard
           img={rocketNotes}
-          hrefSite="#"
+          hrefSite="https://rocketnotes-frontend-web.netlify.app/"
           hrefGitHoub="https://github.com/ivanrods/rocketnotes-frontend"
           title="RocketNotes"
           description={
@@ -35,6 +36,15 @@ function Projects() {
           title="FotoBlog"
           description={
             "Encontre imagens gratuitas para salvar e usar para qualquer coisa!"
+          }
+        />
+        <ProjectCard
+          img={donalds}
+          hrefSite="https://donalds-nine.vercel.app/fsw-donalds"
+          hrefGitHoub="https://github.com/ivanrods/donalds"
+          title="Donalds"
+          description={
+            "Escolha seus lanches favoritos e adiciones ao na sua sacola! "
           }
         />
       </section>
