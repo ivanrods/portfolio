@@ -14,7 +14,7 @@ function Home() {
 
           <Text text="Combinando performance, responsividade e experiência do usuário para criar interfaces modernas e intuitivas que elevam a experiência digital." />
           <button className="text-xl px-8 py-4 bg-blue-600 rounded-md cursor-pointer transition duration-300 hover:bg-blue-700">
-            Download CV
+            <a href="curriculum.pdf" download>Download CV</a>
           </button>
         </div>
       </section>
