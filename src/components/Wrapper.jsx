@@ -1,7 +1,8 @@
-function Wrapper({ children, color, onClick }) {
+function Wrapper({ children, color, onMouseEnter, onMouseLeave }) {
   return (
     <div
-    onClick={onClick}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
       className={`px-8 py-8 border-2 border-stone-500 transition duration-300 hover:bg-neutral-800 rounded-md ${color} flex `}
     >
       {children}

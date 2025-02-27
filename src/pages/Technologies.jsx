@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
+import { RiNextjsLine } from "react-icons/ri";
 import Title from "../components/Title";
 import Wrapper from "../components/Wrapper";
 import Text from "../components/Text";
@@ -31,14 +32,18 @@ function Technologies() {
     figma:
       "Figma é uma ferramenta de design colaborativa usada para criar interfaces de usuário e protótipos.",
     node: "Node.js é um ambiente de execução JavaScript do lado do servidor, permitindo a construção de aplicações escaláveis.",
+    nextjs: "Next.js é um framework React que permite criar aplicativos web rápidos e otimizados, oferecendo:",
   };
 
   // Estado para o texto exibido
-  const [text, setText] = useState("*Click no card para ler*");
+  const [text, setText] = useState("Passe o mouse sobre uma card para ver sua descrição.");
 
   // Função para atualizar o texto ao clicar no ícone
   function handleFigureClick(tecnologia) {
-    setText(tecnologis[tecnologia] || "*click no card para ler*");
+    setText(tecnologis[tecnologia] || "Passe o mouse sobre uma card para ver sua descrição.");
+  }
+  function handleMouseLeave (){
+    setText('Passe o mouse sobre uma card para ver sua descrição. ')
   }
 
   // Mapa de ícones com seus nomes e cores
@@ -52,10 +57,12 @@ function Technologies() {
       cor: "text-blue-400",
     },
     { componente: <FaReact />, nome: "react", cor: "text-blue-400" },
-    { componente: <SiTypescript />, nome: "typescript", cor: "text-blue-600" },
+    { componente: <SiTypescript />, nome: "typescript", cor: "text-blue-500" },
     { componente: <FaGitAlt />, nome: "git", cor: "text-orange-600" },
     { componente: <FaFigma />, nome: "figma", cor: "text-orange-400" },
     { componente: <FaNodeJs />, nome: "node", cor: "text-green-600" },
+    { componente: <RiNextjsLine />, nome: "nextjs", cor: "text-gray-300" },
+    
   ];
 
   return (
@@ -63,7 +70,7 @@ function Technologies() {
       <Title title="Conhecimentos:" />
 
       <div className="flex flex-col justify-center gap-4 lg:flex-row lg:justify-between">
-        <section className="max-w-lg w-full  flex justify-center mx-auto">
+        <section className="max-w-lg w-full flex justify-center mx-auto lg:mx-0">
           <Text text={text} />
         </section>
 
@@ -72,7 +79,8 @@ function Technologies() {
             <Wrapper
               key={index}
               color={icone.cor}
-              onClick={() => handleFigureClick(icone.nome)}
+              onMouseEnter={() => handleFigureClick(icone.nome)}
+              onMouseLeave={handleMouseLeave}
             >
               {icone.componente}
             </Wrapper>

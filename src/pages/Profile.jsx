@@ -3,9 +3,11 @@ import { FaWhatsapp, FaLinkedin, FaGithub, } from "react-icons/fa";
 import photo from "../assets/photo.webp";
 import Text from "../components/Text";
 import Link from "../components/Link";
+import Container from "../components/Container";
 
 function Profile() {
   return (
+    <Container color="bg-neutral-950">
     <section id="sobre" className="flex flex-col gap-8 bg-neutral-900 px-8 py-8 border-2 border-neutral-600 rounded-md lg:flex-row">
       <div className="max-h-96 object-cover overflow-hidden">
         <img className="" src={photo} alt="Photo" />
@@ -33,6 +35,7 @@ function Profile() {
         </div>
       </article>
     </section>
+    </Container>
   );
 }
 
