@@ -6,7 +6,7 @@ function Home() {
   return (
     <Container color="bg-neutral-950">
       <section className="flex items-center h-[650px] justify-between">
-        <div className="max-w-2xl animate-[slideRight_0.5s_ease-out_forwards]">
+        <div className="max-w-2xl animate-[slideRight_2s_ease-out_forwards]">
           <h1 className="text-4xl font-medium leading-tight md:text-5xl">
             <strong className="text-blue-600">Front-end Developer | </strong>
             Criando experiências fluidas e eficientes

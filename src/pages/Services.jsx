@@ -19,7 +19,10 @@ function Services() {
         >
           <FaPenFancy className="text-4xl text-blue-600" />
         </ServiceCard>
-        <small className="h-8 w-1 border-l-2 border-neutral-600 mx-auto"></small>
+        <small
+          data-aos="fade-up"
+          className="h-8 w-1 border-l-2 border-neutral-600 mx-auto"
+        ></small>
         <ServiceCard
           title={"Desenvolvimento"}
           description={
@@ -29,7 +32,10 @@ function Services() {
         >
           <FaCode className="text-4xl blue-600 text-blue-600" />
         </ServiceCard>
-        <small className="h-8 w-1 border-l-2 border-neutral-600 mx-auto"></small>
+        <small
+          data-aos="fade-up"
+          className="h-8 w-1 border-l-2 border-neutral-600 mx-auto"
+        ></small>
         <ServiceCard
           title={"Integração com APIs"}
           description={

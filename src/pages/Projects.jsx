@@ -10,7 +10,7 @@ function Projects() {
     <Container id="projects" color="bg-neutral-950">
       <Title title="Projetos:" />
 
-      <section className="grid gap-4 flex-wrap py-8 justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+      <section className="grid gap-6 flex-wrap py-8 justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
         <ProjectCard
           img={rocketNotes}
           hrefSite="https://rocketnotes-frontend-web.netlify.app/"

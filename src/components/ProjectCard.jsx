@@ -1,19 +1,25 @@
+import { FaGithub } from "react-icons/fa";
 function Project({ img, description, title, hrefGitHoub, hrefSite }) {
   return (
-    <div data-aos="fade-up" className=" bg-neutral-900 flex flex-col gap-3 border-2 border-neutral-600 rounded-md overflow-hidden px-4 py-4 transition duration-300 hover:bg-neutral-800 ">
-      <img src={img} alt="" className="rounded-tl-md rounded-tr-md h-46" />
-      <article className="flex flex-col   gap-2">
-        <p className="text-lg">{title}</p>
-
+    <div
+      data-aos="fade-up"
+      className=" bg-neutral-800 flex flex-col  rounded-lg overflow-hidden"
+    >
+      <img src={img} alt="" className="rounded-tl-md rounded-tr-md h-46 hover:scale-105 transition duration-400" />
+      <article className="flex flex-col px-4 py-4 gap-2">
+        <div className="flex items-center gap-4 text-md text-white ">
+          <p className="text-lg">{title}</p>
+          <a className="text-xl" target="_blank" href={hrefGitHoub} title="Ver Repositório">
+          <FaGithub />
+          </a>
+        </div>
         <p className="text-sm text-neutral-400">{description}</p>
-        <div className="flex gap-4 text-md text-blue-600">
+
+        <button className="text-base px-8 py-2 bg-blue-600 rounded-md cursor-pointer transition duration-300 hover:bg-blue-700">
           <a target="_blank" href={hrefSite}>
             Ver Projeto
           </a>
-          <a target="_blank" href={hrefGitHoub}>
-            Ver Repositório
-          </a>
-        </div>
+        </button>
       </article>
     </div>
   );
