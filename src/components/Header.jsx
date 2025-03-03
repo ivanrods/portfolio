@@ -10,7 +10,7 @@ function Header() {
     setOpenMenu(!openMenu);
   }
   return (
-    <header className="bg-neutral-950 justify-center px-4 fixed w-full z-10">
+    <header data-aos="fade-down"  className="bg-neutral-950 justify-center px-4 fixed w-full z-10">
       <div className="max-w-6xl flex justify-between py-8 mx-auto flex-wrap ">
         <p className="uppercase text-xl font-medium md:text-2xl">
           {" "}
@@ -25,6 +25,7 @@ function Header() {
           onClick={toggleMenu}
         />
         <ul
+        
           className={`${
             openMenu ? "flex" : "hidden"
           } flex pt-6 w-full text-center text-2xl gap-6 md:w-auto md:pt-0 flex-col md:flex-row md:flex md:gap-4 md:text-lg text-stone-400 flex-wrap pl-4 cursor-pointer transition-all duration-500 ease-in-out`}

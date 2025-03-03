@@ -5,8 +5,8 @@ import { IoChatboxEllipsesOutline } from "react-icons/io5";
 function Home() {
   return (
     <Container color="bg-neutral-950">
-      <section className="flex items-center h-[650px] justify-between">
-        <div className="max-w-2xl animate-[slideRight_2s_ease-out_forwards]">
+      <section className="flex items-center mt-44 sm:mt-72 md:mt-72 justify-between">
+        <div data-aos="fade-right" className="max-w-2xl ">
           <h1 className="text-4xl font-medium leading-tight md:text-5xl">
             <strong className="text-blue-600">Front-end Developer | </strong>
             Criando experiências fluidas e eficientes
@@ -19,8 +19,8 @@ function Home() {
             </a>
           </button>
         </div>
-        <article className="hidden lg:block ">
-          <a href="https://wa.me/86994075453" target="_black" title="Fale comigo" data-aos="zoom-in">
+        <article data-aos="fade-left" className="hidden lg:block ">
+          <a  href="https://wa.me/86994075453" target="_black" title="Fale comigo" >
             <IoChatboxEllipsesOutline className="text-[250px] text-blue-600 hover:text-blue-700 rotate-12 transition duration-300"/>
           </a>
         

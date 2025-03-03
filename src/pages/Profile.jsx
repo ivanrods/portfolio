@@ -9,7 +9,7 @@ function Profile() {
   return (
     <Container id="sobre" color="bg-neutral-950 ">
     <section  data-aos="fade-up"  className="flex flex-col gap-8 bg-neutral-900 px-8 py-8 border-2 border-neutral-600 rounded-md lg:flex-row">
-      <div className="max-h-96 object-cover overflow-hidden">
+      <div className="object-cover overflow-hidden">
         <img className="" src={photo} alt="Photo" />
       </div>
 
