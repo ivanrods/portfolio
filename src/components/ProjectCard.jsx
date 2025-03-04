@@ -9,7 +9,7 @@ function Project({ img, description, title, hrefGitHoub, hrefSite }) {
       <article className="flex flex-col px-4 py-4 gap-2">
         <div className="flex items-center gap-4 text-md text-white ">
           <p className="text-lg">{title}</p>
-          <a className="text-xl" target="_blank" href={hrefGitHoub} title="Ver Repositório">
+          <a className="text-xl hover:text-neutral-400" target="_blank" href={hrefGitHoub} title="Ver Repositório">
           <FaGithub />
           </a>
         </div>

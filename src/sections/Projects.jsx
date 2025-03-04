@@ -49,7 +49,7 @@ function Projects() {
         />
       </section>
 
-      <div className="text-center">
+      <div className="text-center hover:text-neutral-400">
         <a href="https://github.com/ivanrods?tab=repositories">
           Repositórios no GitHub
         </a>
