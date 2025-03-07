@@ -44,13 +44,13 @@ function Projects() {
           hrefGitHoub="https://github.com/ivanrods/donalds"
           title="Donalds"
           description={
-            "Escolha seus lanches favoritos e adiciones ao na sua sacola! "
+            "Escolha seus lanches favoritos e adiciones na sua sacola! "
           }
         />
       </section>
 
       <div className="text-center hover:text-neutral-400">
-        <a href="https://github.com/ivanrods?tab=repositories">
+        <a className="text-base md:text-lg text-blue-600 hover:text-blue-700" href="https://github.com/ivanrods?tab=repositories">
           Repositórios no GitHub
         </a>
       </div>
