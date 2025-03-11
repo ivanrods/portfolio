@@ -7,7 +7,7 @@ import Title from "../components/Title";
 
 function Services() {
   return (
-    <Container id="serviços" color="bg-neutral-900">
+    <Container id="services" color="bg-neutral-900">
       <Title title="Serviços:" />
       <section className="flex flex-col w-full py-8">
         <ServiceCard

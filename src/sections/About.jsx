@@ -7,7 +7,7 @@ import Container from "../components/Container";
 
 function About() {
   return (
-    <Container id="sobre" color="bg-neutral-950 ">
+    <Container id="about" color="bg-neutral-950 ">
     <section data-aos="fade-up"  className="flex flex-col gap-8 bg-neutral-900 px-8 py-8 border-2 border-neutral-600 rounded-md lg:flex-row">
       <div className="object-cover overflow-hidden">
         <img className="" src={photo} alt="Photo" />

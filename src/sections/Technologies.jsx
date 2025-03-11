@@ -66,7 +66,7 @@ function Technologies() {
   ];
 
   return (
-    <Container id="tecnologias" color="bg-neutral-900">
+    <Container id="technologies" color="bg-neutral-900">
       <Title title="Conhecimentos:" />
 
       <div className="flex flex-col justify-center gap-4 lg:flex-row lg:justify-between">

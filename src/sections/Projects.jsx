@@ -1,10 +1,13 @@
 import Container from "../components/Container";
 import ProjectCard from "../components/ProjectCard";
 import Title from "../components/Title";
+
 import rocketNotes from "../assets/rocket-notes.webp";
 import costs from "../assets/costs.webp";
 import photoblog from "../assets/photo-blog.webp";
 import donalds from "../assets/donalds.webp"
+import movieslib from '../assets/movies-lib.webp'
+
 function Projects() {
   return (
     <Container id="projects" color="bg-neutral-950">
@@ -45,6 +48,15 @@ function Projects() {
           title="Donalds"
           description={
             "Escolha seus lanches favoritos e adiciones na sua sacola! "
+          }
+        />
+         <ProjectCard
+          img={movieslib}
+          hrefSite="#"
+          hrefGitHoub="https://github.com/ivanrods/movies-lib"
+          title="MoviesLib"
+          description={
+            "Encontre e busque os melhores filmes e veja todos os detalhes sobre eles!"
           }
         />
       </section>
