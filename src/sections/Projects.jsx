@@ -62,7 +62,7 @@ function Projects() {
       </section>
 
       <div className="text-center hover:text-neutral-400">
-        <a className="text-base md:text-lg text-blue-600 hover:text-blue-700" href="https://github.com/ivanrods?tab=repositories">
+        <a target="_blanck" className="text-base md:text-lg text-blue-600 hover:text-blue-700" href="https://github.com/ivanrods?tab=repositories">
           Repositórios no GitHub
         </a>
       </div>

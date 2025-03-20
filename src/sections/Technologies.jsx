@@ -62,6 +62,8 @@ function Technologies() {
     { componente: <FaFigma />, nome: "figma", cor: "text-orange-400" },
     { componente: <FaNodeJs />, nome: "node", cor: "text-green-600" },
     { componente: <RiNextjsLine />, nome: "nextjs", cor: "text-gray-300" },
+
+    
     
   ];
 

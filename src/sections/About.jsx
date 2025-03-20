@@ -16,8 +16,8 @@ function About() {
       <article>
         <span className="text-xl text-blue-600 font-medium">Quem sou</span>
         <h2 className="text-3xl font-medium py-4">Ivan Rodrigues</h2>
-        <p className="text-lg ">Desenvolvedor front-end</p>
-        <Text text=" Meu nome é Ivan Rodrigues, sou um desenvolvedor front-end apaixonado por criar interfaces web rápidas, responsivas e intuitivas. Com foco na experiência do usuário, busco sempre melhorar a performance e garantir que cada projeto tenha um design limpo e funcional. Meu objetivo é transformar ideias em experiências digitais que não apenas atendam, mas superem as expectativas." />
+        <p className="text-lg ">Desenvolvedor Full Stack</p>
+        <Text text="Meu nome é Ivan Rodrigues, sou um desenvolvedor Full Stack apaixonado por criar soluções web completas e escaláveis. Com habilidades em front-end e back-end, meu foco é construir aplicações dinâmicas e eficientes, sempre garantindo uma ótima experiência do usuário e desempenho superior. Busco constantemente aprimorar meus conhecimentos e aplicar as melhores práticas em todas as camadas de desenvolvimento, criando projetos que atendem às necessidades dos usuários e dos sistemas de forma integrada." />
 
         <div className="flex gap-4 flex-wrap">
           <Link href="https://wa.me/86994075453">
