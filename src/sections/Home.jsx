@@ -6,7 +6,7 @@ function Home() {
     <Container color="bg-neutral-950">
       <section className="flex items-center mt-44 sm:mt-72 md:mt-72 justify-between">
         <div data-aos="fade-right" className="max-w-2xl ">
-          <h1 className="text-4xl font-medium leading-tight md:text-5xl">
+          <h1 className="text-3xl font-medium leading-tight md:text-5xl">
             <strong className="text-blue-600">Full Stack Developer | </strong>
             Construindo soluções completas e escaláveis
           </h1>

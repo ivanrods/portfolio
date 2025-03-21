@@ -9,7 +9,7 @@ function ServiceCard({ title, description, children, positon }) {
       <div className="flex gap-4">
         {children}
 
-        <h3 className="text-2xl md:text-3xl inline">{title}</h3>
+        <h3 className="text-xl md:text-3xl inline">{title}</h3>
       </div>
 
       <Text text={description} />
