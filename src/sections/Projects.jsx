@@ -15,39 +15,12 @@ function Projects() {
 
       <section className="grid gap-6 flex-wrap py-8 justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
         <ProjectCard
-          img={rocketNotes}
-          hrefSite="https://rocketnotes-frontend-web.netlify.app/"
-          hrefGitHoub="https://github.com/ivanrods/rocketnotes-frontend"
-          title="RocketNotes"
-          description={
-            "Crie anotaçẽs e com tags e descrições para rever quando quiser!"
-          }
-        />
-        <ProjectCard
-          img={costs}
-          hrefSite="#"
-          hrefGitHoub="https://github.com/ivanrods/costs"
-          title="Costs"
-          description={
-            "Comece a criar e gerenciar os seus projetos agora mesmo!"
-          }
-        />
-        <ProjectCard
-          img={photoblog}
-          hrefSite="#"
-          hrefGitHoub="https://github.com/ivanrods/photo-blog"
-          title="FotoBlog"
-          description={
-            "Encontre imagens gratuitas para salvar e usar para qualquer coisa!"
-          }
-        />
-        <ProjectCard
           img={donalds}
           hrefSite="https://donalds-nine.vercel.app/fsw-donalds"
           hrefGitHoub="https://github.com/ivanrods/donalds"
           title="Donalds"
           description={
-            "Escolha seus lanches favoritos e adiciones na sua sacola! "
+            "Escolha seus lanches favoritos e adiciones na sua sacola!"
           }
         />
          <ProjectCard
@@ -59,6 +32,33 @@ function Projects() {
             "Encontre e busque os melhores filmes e veja todos os detalhes sobre eles!"
           }
         />
+          <ProjectCard
+            img={photoblog}
+            hrefSite="https://photo-liked.vercel.app/"
+            hrefGitHoub="https://github.com/ivanrods/photo-liked"
+            title="FotoLiked"
+            description={
+              "Encontre imagens gratuitas para salvar e usar em qualquer coisa!"
+            }
+          />
+        <ProjectCard
+          img={costs}
+          hrefSite="https://costs-pied.vercel.app/"
+          hrefGitHoub="https://github.com/ivanrods/costs"
+          title="Costs"
+          description={
+            "Comece a criar e gerenciar os seus projetos agora mesmo!"
+          }
+        />
+          <ProjectCard
+            img={rocketNotes}
+            hrefSite="https://rocketnotes-frontend-web.netlify.app/"
+            hrefGitHoub="https://github.com/ivanrods/rocketnotes-frontend"
+            title="RocketNotes"
+            description={
+              "Crie anotaçẽs e com tags e descrições para rever quando quiser!"
+            }
+          />
       </section>
 
       <div className="text-center hover:text-neutral-400">

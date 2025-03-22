@@ -15,8 +15,8 @@ function Project({ img, description, title, hrefGitHoub, hrefSite }) {
         </div>
         <p className="text-sm text-neutral-400">{description}</p>
 
-        <button className="text-base px-8 py-2 bg-blue-600 rounded-md cursor-pointer transition duration-300 hover:bg-blue-700">
-          <a target="_blank" href={hrefSite}>
+        <button className=" bg-blue-600 rounded-md transition duration-300 hover:bg-blue-700">
+          <a className="block w-full px-8 py-2 text-base" target="_blank" href={hrefSite}>
             Ver Projeto
           </a>
         </button>
