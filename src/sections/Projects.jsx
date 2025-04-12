@@ -7,6 +7,7 @@ import costs from "../assets/costs.webp";
 import photoblog from "../assets/photo-blog.webp";
 import donalds from "../assets/donalds.webp"
 import movieslib from '../assets/movies-lib.webp'
+import cadastros from '../assets/cadastros.webp'
 
 function Projects() {
   return (
@@ -16,8 +17,8 @@ function Projects() {
       <section className="grid gap-6 flex-wrap py-8 justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
         <ProjectCard
           img={donalds}
-          hrefSite="https://donalds-nine.vercel.app/fsw-donalds"
-          hrefGitHoub="https://github.com/ivanrods/donalds"
+          hrefProject="https://donalds-nine.vercel.app/fsw-donalds"
+          hrefGitHub="https://github.com/ivanrods/donalds"
           title="Donalds"
           description={
             "Escolha seus lanches favoritos e adiciones na sua sacola!"
@@ -25,8 +26,8 @@ function Projects() {
         />
          <ProjectCard
           img={movieslib}
-          hrefSite="https://movies-lib-ashy.vercel.app/"
-          hrefGitHoub="https://github.com/ivanrods/movies-lib"
+          hrefProject="https://movies-lib-ashy.vercel.app"
+          hrefGitHub="https://github.com/ivanrods/movies-lib"
           title="MoviesLib"
           description={
             "Encontre e busque os melhores filmes e veja todos os detalhes sobre eles!"
@@ -34,8 +35,8 @@ function Projects() {
         />
           <ProjectCard
             img={photoblog}
-            hrefSite="https://photo-liked.vercel.app/"
-            hrefGitHoub="https://github.com/ivanrods/photo-liked"
+            hrefProject="https://photo-liked.vercel.app"
+            hrefGitHub="https://github.com/ivanrods/photo-liked"
             title="FotoLiked"
             description={
               "Encontre imagens gratuitas para salvar e usar em qualquer coisa!"
@@ -43,8 +44,8 @@ function Projects() {
           />
         <ProjectCard
           img={costs}
-          hrefSite="https://costs-pied.vercel.app/"
-          hrefGitHoub="https://github.com/ivanrods/costs"
+          hrefProject="https://costs-pied.vercel.app/"
+          hrefGitHub="https://github.com/ivanrods/costs"
           title="Costs"
           description={
             "Comece a criar e gerenciar os seus projetos agora mesmo!"
@@ -52,11 +53,20 @@ function Projects() {
         />
           <ProjectCard
             img={rocketNotes}
-            hrefSite="https://rocketnotes-frontend-web.netlify.app/"
-            hrefGitHoub="https://github.com/ivanrods/rocketnotes-frontend"
+            hrefProject="https://rocketnotes-frontend-web.netlify.app/"
+            hrefGitHub="https://github.com/ivanrods/rocketnotes-frontend"
             title="RocketNotes"
             description={
               "Crie anotaçẽs e com tags e descrições para rever quando quiser!"
+            }
+          />
+          <ProjectCard
+            img={cadastros}
+            hrefProject="#"
+            hrefGitHub="https://github.com/ivanrods/cadastros-frontend"
+            title="Cadastros"
+            description={
+              "Cadastre pessoas e cidades de forma simples e eficiente!"
             }
           />
       </section>

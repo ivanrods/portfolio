@@ -35,8 +35,8 @@ function Header({ activeSection }) {
           <li
             className={`${
               activeSection === "about"
-                ? "text-neutral-300"
-                : "text-neutral-500"
+                ? "text-neutral-200"
+                : "text-neutral-400"
             } hover:text-neutral-300`}
             onClick={() => scrollToSection("about")}
           >
@@ -45,8 +45,8 @@ function Header({ activeSection }) {
           <li
             className={`${
               activeSection === "services"
-                ? "text-neutral-300"
-                : "text-neutral-500"
+                ? "text-neutral-200"
+                : "text-neutral-400"
             } hover:text-neutral-300`}
             onClick={() => scrollToSection("services")}
           >
@@ -55,8 +55,8 @@ function Header({ activeSection }) {
           <li
             className={`${
               activeSection === "projects"
-                ? "text-neutral-300"
-                : "text-neutral-500"
+                ? "text-neutral-200"
+                : "text-neutral-400"
             } hover:text-neutral-300`}
             onClick={() => scrollToSection("projects")}
           >
@@ -65,8 +65,8 @@ function Header({ activeSection }) {
           <li
             className={`${
               activeSection === "technologies"
-                ? "text-neutral-300"
-                : "text-neutral-500"
+                ? "text-neutral-200"
+                : "text-neutral-400"
             } hover:text-neutral-300`}
             onClick={() => scrollToSection("technologies")}
           >
