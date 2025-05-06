@@ -26,7 +26,7 @@ function Services() {
         <ServiceCard
           title='Desenvolvimento Back-End'
           description={
-            "Construção de APIs e servidores com Node.js e Express.js, além de gerenciar dados com bancos como PostgreSQL, MySQL ou MongoDB. Implementação de autenticação e segurança para garantir a funcionalidade e proteção das aplicações."
+            "Construção de APIs e servidores com Node.js e Express.js, além de gerenciar dados com bancos como PostgreSQL ou MongoDB. Implementação de autenticação e segurança para garantir a funcionalidade e proteção das aplicações."
           }
           positon="self-end"
         >

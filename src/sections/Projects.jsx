@@ -3,7 +3,7 @@ import ProjectCard from "../components/ProjectCard";
 import Title from "../components/Title";
 
 import rocketNotes from "../assets/rocket-notes.webp";
-import costs from "../assets/costs.webp";
+import taskPro from "../assets/task-pro.webp";
 import photoblog from "../assets/photo-blog.webp";
 import donalds from "../assets/donalds.webp"
 import movieslib from '../assets/movies-lib.webp'
@@ -43,12 +43,12 @@ function Projects() {
             }
           />
         <ProjectCard
-          img={costs}
-          hrefProject="https://costs-pied.vercel.app/"
-          hrefGitHub="https://github.com/ivanrods/costs"
-          title="Costs"
+          img={taskPro}
+          hrefProject=""
+          hrefGitHub="https://github.com/ivanrods/task-pro"
+          title="Task Pro"
           description={
-            "Comece a criar e gerenciar os seus projetos agora mesmo!"
+            "Gerencie suas tarefas de forma fácil, rápida e completa!"
           }
         />
           <ProjectCard
