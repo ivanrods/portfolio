@@ -14,7 +14,7 @@ function Home() {
           <Text text="Combinando habilidades em front-end e back-end para criar aplicações dinâmicas, seguras e com ótimo desempenho, entregando soluções completas e integradas que atendem às necessidades do usuário e do sistema." />
 
           <button className="text-lg mt-4 bg-transparent rounded-md border-2 border-blue-600 transition duration-300 hover:bg-blue-600 ">
-            <a className="block px-8 py-4 " href="curriculum.pdf" download>
+            <a className="block px-8 py-4 " href="curriculum-ivan-rodrigues.pdf" download>
               Download CV
             </a>
           </button>

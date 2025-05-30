@@ -1,6 +1,6 @@
 import { MdMarkEmailUnread } from "react-icons/md";
 import { FaWhatsapp, FaLinkedin, FaGithub, } from "react-icons/fa";
-import photo from "../assets/photo.webp";
+
 import Text from "../components/Text";
 import Link from "../components/Link";
 import Container from "../components/Container";
@@ -10,7 +10,7 @@ function About() {
     <Container id="about" color="bg-neutral-950 ">
     <section data-aos="fade-up"  className="flex flex-col gap-8 bg-neutral-900 px-8 py-8 border-2 border-neutral-600 rounded-md lg:flex-row">
       <div className="object-cover overflow-hidden">
-        <img className="" src={photo} alt="Photo" />
+        <img className="w-[3000px]" src="https://i.ibb.co/BVW2w7vb/photo-DQMcg-C8-H.webp" alt="Photo" />
       </div>
 
       <article>
