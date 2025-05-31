@@ -46,7 +46,7 @@ function Projects() {
         />
         <ProjectCard
           img="https://i.ibb.co/Lz7B2s7k/codarse.webp"
-          hrefProject="#"
+          hrefProject="https://codarse-bice.vercel.app/"
           hrefGitHub="https://github.com/ivanrods/codarse"
           title="Codarse"
           description={
