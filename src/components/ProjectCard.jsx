@@ -1,4 +1,4 @@
-function Project({ img, description, title, hrefGitHub, hrefProject }) {
+function Project({ img, description, title, hrefGitHub, hrefProject, alt }) {
   return (
     <a
       href={hrefProject}
@@ -9,10 +9,10 @@ function Project({ img, description, title, hrefGitHub, hrefProject }) {
     >
       <img
         src={img}
-        alt=""
-        className="rounded-tl-md rounded-tr-md h-46 hover:scale-105 transition duration-400"
+        alt={alt}
+        className="rounded-tl-md rounded-tr-md h-60 hover:scale-105 transition duration-400"
       />
-      <article className="flex flex-col px-4 py-4 gap-2">
+      <article className="flex flex-col px-4 py-4 gap-2 ">
         <div className="flex items-center text-md text-white ">
           <p className="text-lg">{title}</p>
         </div>
