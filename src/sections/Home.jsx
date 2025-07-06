@@ -1,5 +1,4 @@
 import Container from "../components/Container";
-import Text from "../components/Text";
 
 function Home() {
   return (
@@ -11,7 +10,12 @@ function Home() {
             Construindo soluções completas e escaláveis.
           </h1>
 
-          <Text text="Combinando habilidades em front-end e back-end para criar aplicações dinâmicas, seguras e com ótimo desempenho, entregando soluções completas e integradas que atendem às necessidades do usuário e do sistema." />
+          <p className="text-base md:text-lg text-center text-neutral-400 leading-tight my-4  md:text-left">
+            Combinando habilidades em front-end e back-end para criar aplicações
+            dinâmicas, seguras e com ótimo desempenho, entregando soluções
+            completas e integradas que atendem às necessidades do usuário e do
+            sistema.
+          </p>
 
           <button className="block mx-auto md:mx-0 text-lg mt-4 bg-transparent rounded-md border-2 border-blue-600 transition duration-300 hover:bg-blue-600 ">
             <a
