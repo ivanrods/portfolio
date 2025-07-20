@@ -1,34 +1,34 @@
+import { FaGithub, FaGlobe } from "react-icons/fa";
+import Text from "./Text";
+import Link from "./Link";
+
 function Project({ img, description, title, hrefGitHub, hrefProject, alt }) {
   return (
-    <a
-      href={hrefProject}
-      target="_blank"
+    <section
       data-aos="fade-up"
-      title="Ver Projeto"
-      className=" bg-neutral-800 flex flex-col  rounded-lg overflow-hidden"
+      className=" flex flex-col items-center  lg:flex-row gap-8  bg-neutral-900 px-8 py-8 border-2 border-neutral-600 rounded-md  min-w-[90%] "
     >
-      <img
-        src={img}
-        alt={alt}
-        className="rounded-tl-md rounded-tr-md h-60 hover:scale-105 transition duration-400"
-      />
-      <article className="flex flex-col px-4 py-4 gap-2 ">
-        <div className="flex items-center text-md text-white ">
-          <p className="text-lg">{title}</p>
+      <div className="object-cover overflow-hidden w-full">
+        <img className="" src={img} alt={alt} />
+      </div>
+
+      <article className="w-full flex flex-col justify-between h-full">
+        <div>
+          <h2 className="text-2xl font-medium ">{title}</h2>
+          <p className="text-lg ">Desenvolvedor Full Stack</p>
+          <Text text={description} />
         </div>
-        <p className="text-sm text-neutral-400">{description}</p>
-        <button className=" bg-blue-600 rounded-md transition duration-300 hover:bg-blue-700">
-          <a
-            className="block w-full px-8 py-2 text-base"
-            target="_blank"
-            href={hrefGitHub}
-            title="Ver Repositório"
-          >
-            Ver Repositório
-          </a>
-        </button>
+
+        <div className="flex gap-4 flex-wrap ">
+          <Link href={hrefGitHub}>
+            <FaGithub />
+          </Link>
+          <Link href={hrefProject}>
+            <FaGlobe />
+          </Link>
+        </div>
       </article>
-    </a>
+    </section>
   );
 }
 

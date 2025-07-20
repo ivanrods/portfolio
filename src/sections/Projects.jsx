@@ -7,7 +7,7 @@ function Projects() {
     <Container id="projects" color="bg-neutral-950">
       <Title title="Projetos:" />
 
-      <section className="grid gap-6 flex-wrap py-8 justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+      <section className="flex flex-row overflow-x-auto w-full gap-2 py-8">
         <ProjectCard
           img="https://i.ibb.co/HT5NCZdF/photo-blog.webp"
           alt="Capa do projeto FotoLiked"

@@ -1,10 +1,12 @@
 import Container from "../components/Container";
 import Text from "../components/Text";
+import Title from "../components/Title";
 
 function Experience() {
   return (
-    <Container color="bg-neutral-950 h-full">
-      <section className="w-full h-full mx-auto max-w-4xl flex flex-col justify-center">
+    <Container color="bg-neutral-900 h-full">
+       <Title title="Experiencia:" />
+      <section className="w-full h-full mx-auto max-w-4xl flex flex-col justify-center py-8">
         <div className="w-full h-full flex justify-center flex-row gap-4 mb-2 " data-aos="fade-up">
           <span className="block h-full bg-neutral-500 px-3 rounded-full text-sm md:text-base mt-1">
             2025
