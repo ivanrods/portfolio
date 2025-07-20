@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Experience from "./sections/Experience";
 
 function App() {
   const [activeSection, setActiveSection] = useState("");
@@ -43,6 +44,7 @@ function App() {
       <Header activeSection={activeSection} />
       <Home />
       <About />
+      <Experience/>
       <Services />
       <Projects />
       <Technologies />

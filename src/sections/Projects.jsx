@@ -60,13 +60,13 @@ function Projects() {
         />
 
         <ProjectCard
-          img="https://i.ibb.co/rGjKq9dk/secret-friend.webp"
-          alt="Capa do projeto Secret Friend"
-          hrefProject="https://secret-friend-web.vercel.app"
-          hrefGitHub="https://github.com/ivanrods/secret-friend"
-          title="Secret Friend"
+          img="https://i.ibb.co/Jj57KwmM/task-pro.webp"
+          alt="Capa do projeto TaskPro"
+          hrefProject="https://task-pro-flame.vercel.app/"
+          hrefGitHub="https://github.com/ivanrods/task-pro"
+          title="TaskPro"
           description={
-            "Aplicação web moderna para organizar eventos de amigo secreto!"
+            "Gerencie suas tarefas de forma fácil, completa e onde quiser!"
           }
         />
       </section>
