@@ -15,7 +15,7 @@ function Projects() {
           hrefGitHub="https://github.com/ivanrods/cadastros-frontend"
           title="Cadastros"
           description={
-            "É uma aplicação fullStack, que permite criar usuario, cadastrar, consultar pessoas e cidades de forma simples e eficiente com um layout agradavel e responsivo e paginado. "
+            "É uma aplicação Full Stack, que permite criar usuário, cadastrar, consultar pessoas e cidades de forma simples e eficiente com um layout agradavel, responsivo e paginado. "
           }
           stacks="React | TypeScript | Material-UI | Node.js | PostgreSQL"
         />
@@ -38,9 +38,9 @@ function Projects() {
           hrefGitHub="https://github.com/ivanrods/donalds"
           title="GoMenu"
           description={
-            "É uma aplicação fullstack que simula um restaurante virtual, onde os usuários podem explorar o cardápio, escolher produtos e adicioná-los à sacola para finalizar a compra."
+            "É uma aplicação Full Stack que simula um restaurante virtual, onde os usuários podem explorar o cardápio, escolher produtos e adicioná-los à sacola para finalizar a compra."
           }
-          stacks="Next.js | Tailwind | shdcn| Node.js | Prisma."
+          stacks="Next.js | Tailwind | Shdcn | Node.js | Prisma."
         />
         <ProjectCard
           img="https://i.ibb.co/HT5NCZdF/photo-blog.webp"
@@ -49,7 +49,7 @@ function Projects() {
           hrefGitHub="https://github.com/ivanrods/photo-liked"
           title="FotoLiked"
           description={
-            "É uma aplicação front-end onde você pode explorar imagens e dar likes nas que mais gostar. A aplicação permite navegar por diversas imagens e interagir com elas, proporcionando uma experiência simples e divertida."
+            "É uma aplicação front-end onde você pode explorar imagens e dar likes nas que mais gostar. A aplicação permite navegar por diversas imagens e interagir com elas, proporcionando uma experiência simples e agradavel."
           }
           stacks="React | Tailwind"
         />

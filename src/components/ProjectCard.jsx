@@ -27,7 +27,7 @@ function Project({
         </div>
 
         <div className="flex gap-4 flex-wrap ">
-          <Link href={hrefGitHub}>
+          <Link href={hrefGitHub} >
             <FaGithub size={25} />
           </Link>
           <Link href={hrefProject}>

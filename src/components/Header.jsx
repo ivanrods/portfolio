@@ -42,6 +42,16 @@ function Header({ activeSection }) {
           >
             Sobre
           </li>
+           <li
+            className={`${
+              activeSection === "experience"
+                ? "text-neutral-200"
+                : "text-neutral-400"
+            } hover:text-neutral-300`}
+            onClick={() => scrollToSection("experience")}
+          >
+            Experiência
+          </li>
           <li
             className={`${
               activeSection === "services"
