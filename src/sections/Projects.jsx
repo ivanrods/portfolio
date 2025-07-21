@@ -4,40 +4,10 @@ import Title from "../components/Title";
 
 function Projects() {
   return (
-    <Container id="projects" color="bg-neutral-950">
+    <Container id="projects" color="bg-neutral-900">
       <Title title="Projetos:" />
 
       <section className="flex flex-row overflow-x-auto w-full gap-2 py-8">
-        <ProjectCard
-          img="https://i.ibb.co/HT5NCZdF/photo-blog.webp"
-          alt="Capa do projeto FotoLiked"
-          hrefProject="https://photo-liked.vercel.app"
-          hrefGitHub="https://github.com/ivanrods/photo-liked"
-          title="FotoLiked"
-          description={
-            "Encontre imagens gratuitas para salvar e usar em qualquer coisa!"
-          }
-        />
-        <ProjectCard
-          img="https://i.ibb.co/RTStX9dR/note-link.webp"
-          alt="Capa do projeto NoteLinks"
-          hrefProject="https://notelinks.netlify.app/"
-          hrefGitHub="https://github.com/ivanrods/notelinks-frontend"
-          title="NoteLinks"
-          description={
-            "Crie anotaçẽs e com tags e descrições para rever quando quiser!"
-          }
-        />
-        <ProjectCard
-          img="https://i.ibb.co/358BSNzZ/go-menu.webp"
-          alt="Capa do projeto GoMenu"
-          hrefProject="https://donalds-nine.vercel.app/fsw-donalds"
-          hrefGitHub="https://github.com/ivanrods/donalds"
-          title="GoMenu"
-          description={
-            "Escolha seus lanches favoritos e adiciones na sua sacola!"
-          }
-        />
         <ProjectCard
           img="https://i.ibb.co/CkrR0Ls/cadastros.webp"
           alt="Capa do projeto Cadastros"
@@ -45,18 +15,9 @@ function Projects() {
           hrefGitHub="https://github.com/ivanrods/cadastros-frontend"
           title="Cadastros"
           description={
-            "Cadastre pessoas e cidades de forma simples e eficiente!"
+            "É uma aplicação fullStack, que permite criar usuario, cadastrar, consultar pessoas e cidades de forma simples e eficiente com um layout agradavel e responsivo e paginado. "
           }
-        />
-        <ProjectCard
-          img="https://i.ibb.co/Lz7B2s7k/codarse.webp"
-          alt="Capa do projeto Codarse"
-          hrefProject="https://codarse-bice.vercel.app/"
-          hrefGitHub="https://github.com/ivanrods/codarse"
-          title="Codarse"
-          description={
-            "Plataforama com aula e cursor de programaçao do youtube!"
-          }
+          stacks="React | TypeScript | Material-UI | Node.js | PostgreSQL"
         />
 
         <ProjectCard
@@ -66,12 +27,35 @@ function Projects() {
           hrefGitHub="https://github.com/ivanrods/task-pro"
           title="TaskPro"
           description={
-            "Gerencie suas tarefas de forma fácil, completa e onde quiser!"
+            "É uma aplicação Full Stack, que permite gerenciar uma lista de tarefas com praticidade e segurança. O usuário pode criar conta, fazer login, marcar como favorita, editar e excluir com uma interface moderna e responsiva."
           }
+          stacks=" Next.js | TypeScript | Zod | jwt | Prisma"
+        />
+        <ProjectCard
+          img="https://i.ibb.co/358BSNzZ/go-menu.webp"
+          alt="Capa do projeto GoMenu"
+          hrefProject="https://donalds-nine.vercel.app/fsw-donalds"
+          hrefGitHub="https://github.com/ivanrods/donalds"
+          title="GoMenu"
+          description={
+            "É uma aplicação fullstack que simula um restaurante virtual, onde os usuários podem explorar o cardápio, escolher produtos e adicioná-los à sacola para finalizar a compra."
+          }
+          stacks="Next.js | Tailwind | shdcn| Node.js | Prisma."
+        />
+        <ProjectCard
+          img="https://i.ibb.co/HT5NCZdF/photo-blog.webp"
+          alt="Capa do projeto FotoLiked"
+          hrefProject="https://photo-liked.vercel.app"
+          hrefGitHub="https://github.com/ivanrods/photo-liked"
+          title="FotoLiked"
+          description={
+            "É uma aplicação front-end onde você pode explorar imagens e dar likes nas que mais gostar. A aplicação permite navegar por diversas imagens e interagir com elas, proporcionando uma experiência simples e divertida."
+          }
+          stacks="React | Tailwind"
         />
       </section>
 
-      <div className="text-center hover:text-neutral-400">
+      <div className="text-center hover:text-neutral-400 mt-4">
         <a
           target="_blanck"
           className="text-base md:text-lg text-blue-600 hover:text-blue-700"
