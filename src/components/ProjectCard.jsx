@@ -1,6 +1,7 @@
 import { FaGithub, FaGlobe } from "react-icons/fa";
 import Text from "./Text";
 import Link from "./Link";
+import { icones } from "../utils/icones";
 
 function Project({
   img,
@@ -11,6 +12,16 @@ function Project({
   alt,
   stacks,
 }) {
+  function getIconByName(name) {
+    const cleanName = name.trim().toLowerCase().replace(/\./g, ""); // remove todos os pontos
+    const iconObj = icones.find(
+      (icone) => icone.nome.toLowerCase().replace(/\./g, "") === cleanName
+    );
+    return iconObj ? (
+      <span className={`${iconObj.cor} mr-1`}>{iconObj.componente}</span>
+    ) : null;
+  }
+
   return (
     <section
       data-aos="fade-up"
@@ -27,8 +38,9 @@ function Project({
             {stacks.map((stack, index) => (
               <span
                 key={index}
-                className="border-2 border-neutral-600 px-2 py-1 rounded-md text-xs text-neutral-400"
+                className="flex items-center border-2 border-neutral-600 px-2 py-1 rounded-md text-xs text-neutral-400"
               >
+                {getIconByName(stack)}
                 {stack.trim()}
               </span>
             ))}

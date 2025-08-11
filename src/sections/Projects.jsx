@@ -40,7 +40,7 @@ function Projects() {
       title: "GoMenu",
       description:
         "É uma aplicação Full Stack que simula um restaurante virtual, onde os usuários podem explorar o cardápio, escolher produtos e adicioná-los à sacola para finalizar a compra.",
-      stacks: ["Next.js ", " Tailwind ", " Shdcn ", " Node.js ", " Prisma."],
+      stacks: ["Next.js ", " Tailwind ", " Shadcn ", " Node.js ", " Prisma"],
     },
     {
       img: "https://i.ibb.co/HT5NCZdF/photo-blog.webp",
