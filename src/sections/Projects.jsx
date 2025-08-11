@@ -5,6 +5,48 @@ import Title from "../components/Title";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 function Projects() {
+  const projects = [
+    {
+      img: "https://i.ibb.co/CkrR0Ls/cadastros.webp",
+      alt: "Capa do projeto Cadastros",
+      hrefProject: "https://cadastros-frontend.vercel.app/",
+      hrefGitHub: "https://github.com/ivanrods/cadastros-frontend",
+      title: "Cadastros",
+      description:
+        "É uma aplicação Full Stack, que permite criar usuário, cadastrar, consultar pessoas e cidades de forma simples e eficiente com um layout agradavel, responsivo e paginado. ",
+      stacks: "React | TypeScript | Material-UI | Node.js | PostgreSQL",
+    },
+    {
+      img: "https://i.ibb.co/Jj57KwmM/task-pro.webp",
+      alt: "Capa do projeto TaskPro",
+      hrefProject: "https://task-pro-flame.vercel.app/",
+      hrefGitHub: "https://github.com/ivanrods/task-pro",
+      title: "TaskPro",
+      description:
+        "É uma aplicação Full Stack, que permite gerenciar uma lista de tarefas com praticidade e segurança. O usuário pode criar conta, fazer login, marcar como favorita, editar e excluir com uma interface moderna e responsiva.",
+      stacks: " Next.js | TypeScript | Prisma  | JWT | Zod ",
+    },
+    {
+      img: "https://i.ibb.co/358BSNzZ/go-menu.webp",
+      alt: "Capa do projeto GoMenu",
+      hrefProject: "https://donalds-nine.vercel.app/fsw-donalds",
+      hrefGitHub: "https://github.com/ivanrods/donalds",
+      title: "GoMenu",
+      description:
+        "É uma aplicação Full Stack que simula um restaurante virtual, onde os usuários podem explorar o cardápio, escolher produtos e adicioná-los à sacola para finalizar a compra.",
+      stacks: "Next.js | Tailwind | Shdcn | Node.js | Prisma.",
+    },
+    {
+      img: "https://i.ibb.co/HT5NCZdF/photo-blog.webp",
+      alt: "Capa do projeto FotoLiked",
+      hrefProject: "https://photo-liked.vercel.app",
+      hrefGitHub: "https://github.com/ivanrods/photo-liked",
+      title: "FotoLiked",
+      description:
+        "É uma aplicação front-end onde você pode explorar imagens e dar likes nas que mais gostar. A aplicação permite navegar por diversas imagens e interagir com elas, proporcionando uma experiência simples e agradavel.",
+      stacks: "React | Tailwind | Node.js | MongoDB | JWT",
+    },
+  ];
   const scrollRef = useRef(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
@@ -61,50 +103,18 @@ function Projects() {
           ref={scrollRef}
           className="flex flex-row overflow-x-auto w-full gap-2 py-8 no-scrollbar"
         >
-          <ProjectCard
-            img="https://i.ibb.co/CkrR0Ls/cadastros.webp"
-            alt="Capa do projeto Cadastros"
-            hrefProject="https://cadastros-frontend.vercel.app/"
-            hrefGitHub="https://github.com/ivanrods/cadastros-frontend"
-            title="Cadastros"
-            description={
-              "É uma aplicação Full Stack, que permite criar usuário, cadastrar, consultar pessoas e cidades de forma simples e eficiente com um layout agradavel, responsivo e paginado. "
-            }
-            stacks="React | TypeScript | Material-UI | Node.js | PostgreSQL"
-          />
-          <ProjectCard
-            img="https://i.ibb.co/Jj57KwmM/task-pro.webp"
-            alt="Capa do projeto TaskPro"
-            hrefProject="https://task-pro-flame.vercel.app/"
-            hrefGitHub="https://github.com/ivanrods/task-pro"
-            title="TaskPro"
-            description={
-              "É uma aplicação Full Stack, que permite gerenciar uma lista de tarefas com praticidade e segurança. O usuário pode criar conta, fazer login, marcar como favorita, editar e excluir com uma interface moderna e responsiva."
-            }
-            stacks=" Next.js | TypeScript | Prisma  | JWT | Zod "
-          />
-          <ProjectCard
-            img="https://i.ibb.co/358BSNzZ/go-menu.webp"
-            alt="Capa do projeto GoMenu"
-            hrefProject="https://donalds-nine.vercel.app/fsw-donalds"
-            hrefGitHub="https://github.com/ivanrods/donalds"
-            title="GoMenu"
-            description={
-              "É uma aplicação Full Stack que simula um restaurante virtual, onde os usuários podem explorar o cardápio, escolher produtos e adicioná-los à sacola para finalizar a compra."
-            }
-            stacks="Next.js | Tailwind | Shdcn | Node.js | Prisma."
-          />
-          <ProjectCard
-            img="https://i.ibb.co/HT5NCZdF/photo-blog.webp"
-            alt="Capa do projeto FotoLiked"
-            hrefProject="https://photo-liked.vercel.app"
-            hrefGitHub="https://github.com/ivanrods/photo-liked"
-            title="FotoLiked"
-            description={
-              "É uma aplicação front-end onde você pode explorar imagens e dar likes nas que mais gostar. A aplicação permite navegar por diversas imagens e interagir com elas, proporcionando uma experiência simples e agradavel."
-            }
-            stacks="React | Tailwind | Node.js | MongoDB | JWT"
-          />
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              img={project.img}
+              alt={project.alt}
+              hrefProject={project.hrefProject}
+              hrefGitHub={project.hrefGitHub}
+              title={project.title}
+              description={project.description}
+              stacks={project.stacks}
+            />
+          ))}
         </section>
         {canScrollRight && (
           <button
