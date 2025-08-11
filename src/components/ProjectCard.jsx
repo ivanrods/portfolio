@@ -23,11 +23,20 @@ function Project({
           <h2 className="text-lg md:text-2xl font-medium ">{title}</h2>
 
           <Text text={description} />
-          <p className="pb-2 text-sm text-neutral-200">{stacks}</p>
+          <div className="flex flex-wrap gap-2 pb-2">
+            {stacks.map((stack, index) => (
+              <span
+                key={index}
+                className="border-2 border-neutral-600 px-2 py-1 rounded-md text-xs text-neutral-400"
+              >
+                {stack.trim()}
+              </span>
+            ))}
+          </div>
         </div>
 
         <div className="flex gap-4 flex-wrap ">
-          <Link href={hrefGitHub} >
+          <Link href={hrefGitHub}>
             <FaGithub size={25} />
           </Link>
           <Link href={hrefProject}>

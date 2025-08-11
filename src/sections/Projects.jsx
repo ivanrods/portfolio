@@ -14,7 +14,13 @@ function Projects() {
       title: "Cadastros",
       description:
         "É uma aplicação Full Stack, que permite criar usuário, cadastrar, consultar pessoas e cidades de forma simples e eficiente com um layout agradavel, responsivo e paginado. ",
-      stacks: "React | TypeScript | Material-UI | Node.js | PostgreSQL",
+      stacks: [
+        "React ",
+        " TypeScript ",
+        " Material-UI ",
+        " Node.js ",
+        " PostgreSQL",
+      ],
     },
     {
       img: "https://i.ibb.co/Jj57KwmM/task-pro.webp",
@@ -24,7 +30,7 @@ function Projects() {
       title: "TaskPro",
       description:
         "É uma aplicação Full Stack, que permite gerenciar uma lista de tarefas com praticidade e segurança. O usuário pode criar conta, fazer login, marcar como favorita, editar e excluir com uma interface moderna e responsiva.",
-      stacks: " Next.js | TypeScript | Prisma  | JWT | Zod ",
+      stacks: [" Next.js ", " TypeScript ", " Prisma  ", " JWT ", " Zod "],
     },
     {
       img: "https://i.ibb.co/358BSNzZ/go-menu.webp",
@@ -34,7 +40,7 @@ function Projects() {
       title: "GoMenu",
       description:
         "É uma aplicação Full Stack que simula um restaurante virtual, onde os usuários podem explorar o cardápio, escolher produtos e adicioná-los à sacola para finalizar a compra.",
-      stacks: "Next.js | Tailwind | Shdcn | Node.js | Prisma.",
+      stacks: ["Next.js ", " Tailwind ", " Shdcn ", " Node.js ", " Prisma."],
     },
     {
       img: "https://i.ibb.co/HT5NCZdF/photo-blog.webp",
@@ -44,7 +50,7 @@ function Projects() {
       title: "FotoLiked",
       description:
         "É uma aplicação front-end onde você pode explorar imagens e dar likes nas que mais gostar. A aplicação permite navegar por diversas imagens e interagir com elas, proporcionando uma experiência simples e agradavel.",
-      stacks: "React | Tailwind | Node.js | MongoDB | JWT",
+      stacks: ["React ", " Tailwind ", " Node.js ", " MongoDB ", " JWT"],
     },
   ];
   const scrollRef = useRef(null);
