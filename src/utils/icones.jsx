@@ -15,6 +15,9 @@ import {
   SiExpress,
   SiPrisma,
   SiGraphql,
+  SiMongodb,
+  SiJsonwebtokens,
+  SiZod,
 } from "react-icons/si";
 
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -40,4 +43,8 @@ export const icones = [
   { componente: <SiJest />, nome: "jest", cor: "text-orange-700" },
   { componente: <FaFigma />, nome: "figma", cor: " text-red-600" },
   { componente: <FaGitAlt />, nome: "git", cor: "text-orange-600" },
+
+  { componente: <SiMongodb />, nome: "mongodb", cor: "text-green-600" },
+  { componente: <SiJsonwebtokens />, nome: "jwt", cor: "text-red-600" },
+  { componente: <SiZod />, nome: "zod", cor: "text-blue-600" },
 ];

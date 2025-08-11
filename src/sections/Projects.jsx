@@ -35,11 +35,11 @@ function Projects() {
     {
       img: "https://i.ibb.co/358BSNzZ/go-menu.webp",
       alt: "Capa do projeto GoMenu",
-      hrefProject: "https://donalds-nine.vercel.app/fsw-donalds",
+      hrefProject: "https://donalds-nine.vercel.app/fsw-donal ds",
       hrefGitHub: "https://github.com/ivanrods/donalds",
       title: "GoMenu",
       description:
-        "É uma aplicação Full Stack que simula um restaurante virtual, onde os usuários podem explorar o cardápio, escolher produtos e adicioná-los à sacola para finalizar a compra.",
+        "É uma aplicação Full Stack que simula um restaurante virtual, onde os usuários podem explorar o cardápio, escolher produtos e adicioná-los à sacola para finalizar a compra. ",
       stacks: ["Next.js ", " Tailwind ", " Shadcn ", " Node.js ", " Prisma"],
     },
     {
