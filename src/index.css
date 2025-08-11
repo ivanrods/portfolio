@@ -12,3 +12,13 @@ body {
   color: white;
   background-color: #0a0a0a;
 }
+
+/* Esconde a barra de rolagem, mas mantém o scroll */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE e Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari e Opera */
+}

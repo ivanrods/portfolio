@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Container from "../components/Container";
 import ProjectCard from "../components/ProjectCard";
 import Title from "../components/Title";
@@ -6,6 +6,17 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 function Projects() {
   const scrollRef = useRef(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
+
+  const checkScrollButtons = () => {
+    if (scrollRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+
+      setCanScrollLeft(scrollLeft > 0);
+      setCanScrollRight(scrollLeft + clientWidth < scrollWidth - 1);
+    }
+  };
 
   const scroll = (direction) => {
     if (scrollRef.current) {
@@ -17,21 +28,38 @@ function Projects() {
     }
   };
 
+  useEffect(() => {
+    checkScrollButtons(); // checa no carregamento
+    const el = scrollRef.current;
+    if (el) {
+      el.addEventListener("scroll", checkScrollButtons);
+      window.addEventListener("resize", checkScrollButtons);
+    }
+    return () => {
+      if (el) {
+        el.removeEventListener("scroll", checkScrollButtons);
+        window.removeEventListener("resize", checkScrollButtons);
+      }
+    };
+  }, []);
+
   return (
     <Container id="projects" color="bg-neutral-900">
       <Title title="Projetos:" />
       <div className="relative w-full">
-        <button
-          onClick={() => scroll("left")}
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-neutral-800 p-2 rounded-full shadow-lg hover:bg-neutral-700"
-          aria-label="Scroll para a esquerda"
-        >
-          <FiChevronLeft className="text-white w-6 h-6" />
-        </button>
+        {canScrollLeft && (
+          <button
+            onClick={() => scroll("left")}
+            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-neutral-800 p-2 rounded-full shadow-lg hover:bg-neutral-700"
+            aria-label="Scroll para a esquerda"
+          >
+            <FiChevronLeft className="text-white w-6 h-6" />
+          </button>
+        )}
 
         <section
           ref={scrollRef}
-          className="flex flex-row overflow-x-auto w-full gap-2 py-8 no-scrollba"
+          className="flex flex-row overflow-x-auto w-full gap-2 py-8 no-scrollbar"
         >
           <ProjectCard
             img="https://i.ibb.co/CkrR0Ls/cadastros.webp"
@@ -53,7 +81,7 @@ function Projects() {
             description={
               "É uma aplicação Full Stack, que permite gerenciar uma lista de tarefas com praticidade e segurança. O usuário pode criar conta, fazer login, marcar como favorita, editar e excluir com uma interface moderna e responsiva."
             }
-            stacks=" Next.js | TypeScript | Zod | jwt | Prisma"
+            stacks=" Next.js | TypeScript | Prisma  | JWT | Zod "
           />
           <ProjectCard
             img="https://i.ibb.co/358BSNzZ/go-menu.webp"
@@ -75,16 +103,18 @@ function Projects() {
             description={
               "É uma aplicação front-end onde você pode explorar imagens e dar likes nas que mais gostar. A aplicação permite navegar por diversas imagens e interagir com elas, proporcionando uma experiência simples e agradavel."
             }
-            stacks="React | Tailwind"
+            stacks="React | Tailwind | Node.js | MongoDB | JWT"
           />
         </section>
-        <button
-          onClick={() => scroll("right")}
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-neutral-800 p-2 rounded-full shadow-lg hover:bg-neutral-700"
-          aria-label="Scroll para a direita"
-        >
-          <FiChevronRight className="text-white w-6 h-6" />
-        </button>
+        {canScrollRight && (
+          <button
+            onClick={() => scroll("right")}
+            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-neutral-800 p-2 rounded-full shadow-lg hover:bg-neutral-700"
+            aria-label="Scroll para a direita"
+          >
+            <FiChevronRight className="text-white w-6 h-6" />
+          </button>
+        )}
       </div>
 
       <div className="text-center hover:text-neutral-400 mt-4">
