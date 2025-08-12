@@ -1,3 +1,4 @@
+import { LuDownload } from "react-icons/lu";
 import Container from "../components/Container";
 
 function Home() {
@@ -17,13 +18,13 @@ function Home() {
             sistema.
           </p>
 
-          <button className="block mx-auto md:mx-0 text-lg mt-4 bg-transparent rounded-md border-2 border-blue-600 transition duration-300 hover:bg-blue-600 ">
+          <button className="block mx-auto md:mx-0 text-lg mt-4 bg-transparent rounded-xl border-2 border-blue-600 transition duration-300 hover:bg-blue-600 ">
             <a
-              className="block px-6 py-3 md:px-8 md:py-4 "
+              className="flex gap-3 items-center px-4 py-3 md:px-6 md:py-4 "
               href="curriculum-ivan-rodrigues.pdf"
               download
             >
-              Download CV
+              Download CV <LuDownload size={20} />
             </a>
           </button>
         </div>

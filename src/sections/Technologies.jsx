@@ -1,48 +1,60 @@
 import Container from "../components/Container";
-import { icones } from "../utils/icones";
-import { tech } from "../utils/tech";
+import { techList } from "../utils/techList";
 import Title from "../components/Title";
-import Wrapper from "../components/Wrapper";
 import Text from "../components/Text";
 import { useState } from "react";
 
 function Technologies() {
-  // Textos para cada tecnologia
-
-  // Estado para o texto exibido
   const [text, setText] = useState(
     "Passe o mouse sobre uma card para ver sua descrição."
   );
 
-  // Função para atualizar o texto ao clicar no ícone
   function handleFigureClick(tecnologia) {
+    const techObj = techList.find(
+      (item) => item.nome.toLowerCase() === tecnologia.toLowerCase()
+    );
     setText(
-      tech[tecnologia] || "Passe o mouse sobre uma card para ver sua descrição."
+      techObj?.descricao ||
+        "Passe o mouse sobre uma card para ver sua descrição."
     );
   }
+
   function handleMouseLeave() {
-    setText("Passe o mouse sobre uma card para ver sua descrição. ");
+    setText("Passe o mouse sobre uma card para ver sua descrição.");
   }
 
   return (
     <Container id="technologies" color="bg-neutral-950 ">
       <Title title="Conhecimentos:" />
 
-      <div className="flex flex-col justify-center gap-4 xl:flex-row lg:justify-between">
+      <div className="flex flex-col justify-center gap-4 xl:flex-row lg:justify-between xl:grid xl:grid-cols-2">
         <section className="max-w-lg w-full flex justify-center mx-auto lg:mx-0">
           <Text text={text} />
         </section>
 
-        <article className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-4 gap-4 justify-center mx-auto xl:mx-0 text-6xl ">
-          {icones.map((icone, index) => (
-            <Wrapper
+        <article className="flex justify-center flex-wrap gap-4">
+          {techList.map((tecnologia, index) => (
+            <div
               key={index}
-              color={icone.cor}
-              onMouseEnter={() => handleFigureClick(icone.nome)}
+              onMouseEnter={() => handleFigureClick(tecnologia.nome)}
               onMouseLeave={handleMouseLeave}
+              data-aos="zoom-in"
+              className={`px-3 md:px-4 py-2 border-2 border-stone-500 transition duration-300 hover:bg-neutral-800 rounded-xl flex items-center gap-2 md:gap-3 ${tecnologia.cor} `}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  handleFigureClick(tecnologia.nome);
+                }
+              }}
             >
-              {icone.componente}
-            </Wrapper>
+              <div className="text-2xl md:text-3xl">
+                {tecnologia.componente}
+              </div>
+              <p className="text-md md:text-lg text-neutral-400 capitalize ">
+                {tecnologia.nome}
+              </p>
+            </div>
           ))}
         </article>
       </div>

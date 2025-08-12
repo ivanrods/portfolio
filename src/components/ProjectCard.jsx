@@ -1,7 +1,7 @@
 import { FaGithub, FaGlobe } from "react-icons/fa";
 import Text from "./Text";
 import Link from "./Link";
-import { icones } from "../utils/icones";
+import { techList } from "../utils/techList";
 
 function Project({
   img,
@@ -14,18 +14,25 @@ function Project({
 }) {
   function getIconByName(name) {
     const cleanName = name.trim().toLowerCase().replace(/\./g, ""); // remove todos os pontos
-    const iconObj = icones.find(
+    const iconObj = techList.find(
       (icone) => icone.nome.toLowerCase().replace(/\./g, "") === cleanName
     );
     return iconObj ? (
       <span className={`${iconObj.cor} mr-1`}>{iconObj.componente}</span>
     ) : null;
   }
+  function getDescriptionByName(name) {
+    const cleanName = name.trim().toLowerCase().replace(/\./g, "");
+    const tech = techList.find(
+      (t) => t.nome.toLowerCase().replace(/\./g, "") === cleanName
+    );
+    return tech ? tech.descricao : "";
+  }
 
   return (
     <section
       data-aos="fade-up"
-      className=" flex flex-col items-center  md:flex-row gap-8  bg-neutral-900  p-6 md:p-8 border-2 border-neutral-600 rounded-md  min-w-[90%] "
+      className=" flex flex-col items-center  md:flex-row gap-8  bg-neutral-900  p-6 md:p-8 border-2 border-neutral-600 rounded-xl  min-w-[90%] "
     >
       <img className="w-full h-full" src={img} alt={alt} />
 
@@ -38,7 +45,8 @@ function Project({
             {stacks.map((stack, index) => (
               <span
                 key={index}
-                className="flex items-center border-2 border-neutral-600 px-2 py-1 rounded-md text-xs text-neutral-400"
+                title={getDescriptionByName(stack)}
+                className="flex items-center border-2 border-neutral-600 px-2 py-1 rounded-lg text-xs text-neutral-400 cursor-pointer"
               >
                 {getIconByName(stack)}
                 {stack.trim()}
@@ -48,10 +56,10 @@ function Project({
         </div>
 
         <div className="flex gap-4 flex-wrap ">
-          <Link href={hrefGitHub}>
+          <Link href={hrefGitHub} title="Ver repositório do projeto">
             <FaGithub size={25} />
           </Link>
-          <Link href={hrefProject}>
+          <Link href={hrefProject} title="Ver deploy do projeto">
             <FaGlobe size={25} />
           </Link>
         </div>

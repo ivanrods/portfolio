@@ -40,7 +40,7 @@ function Projects() {
       title: "GoMenu",
       description:
         "É uma aplicação Full Stack que simula um restaurante virtual, onde os usuários podem explorar o cardápio, escolher produtos e adicioná-los à sacola para finalizar a compra. ",
-      stacks: ["Next.js ", " Tailwind ", " Shadcn ", " Node.js ", " Prisma"],
+      stacks: ["Next.js ", " Tailwindcss ", " Shadcn ", " Node.js ", " Prisma"],
     },
     {
       img: "https://i.ibb.co/HT5NCZdF/photo-blog.webp",
@@ -50,7 +50,7 @@ function Projects() {
       title: "FotoLiked",
       description:
         "É uma aplicação front-end onde você pode explorar imagens e dar likes nas que mais gostar. A aplicação permite navegar por diversas imagens e interagir com elas, proporcionando uma experiência simples e agradavel.",
-      stacks: ["React ", " Tailwind ", " Node.js ", " MongoDB ", " JWT"],
+      stacks: ["React ", " Tailwindcss ", " Node.js ", " MongoDB ", " JWT"],
     },
   ];
   const scrollRef = useRef(null);
