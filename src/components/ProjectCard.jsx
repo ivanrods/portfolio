@@ -36,25 +36,22 @@ function Project({
     >
       <img className="w-full h-full" src={img} alt={alt} />
 
-      <article className="w-full h-auto md:h-full flex flex-col justify-between ">
-        <div>
-          <h2 className="text-lg md:text-2xl font-medium ">{title}</h2>
+      <article className="w-full h-auto md:h-full flex flex-col gap-4 justify-between ">
+        <h2 className="text-lg md:text-2xl font-medium ">{title}</h2>
 
-          <Text text={description} />
-          <div className="flex flex-wrap gap-2 pb-2">
-            {stacks.map((stack, index) => (
-              <span
-                key={index}
-                title={getDescriptionByName(stack)}
-                className="flex items-center border-2 border-neutral-600 px-2 py-1 rounded-lg text-xs text-neutral-400 cursor-pointer"
-              >
-                {getIconByName(stack)}
-                {stack.trim()}
-              </span>
-            ))}
-          </div>
+        <Text text={description} />
+        <div className="flex flex-wrap gap-2">
+          {stacks.map((stack, index) => (
+            <span
+              key={index}
+              title={getDescriptionByName(stack)}
+              className="flex items-center border-2 border-neutral-600 px-2 py-1 rounded-lg text-xs text-neutral-400 cursor-pointer"
+            >
+              {getIconByName(stack)}
+              {stack.trim()}
+            </span>
+          ))}
         </div>
-
         <div className="flex gap-4 flex-wrap ">
           <Link href={hrefGitHub} title="Ver repositório do projeto">
             <FaGithub size={25} />

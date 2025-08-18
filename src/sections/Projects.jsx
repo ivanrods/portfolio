@@ -7,6 +7,41 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 function Projects() {
   const projects = [
     {
+      img: "https://i.ibb.co/Jj57KwmM/task-pro.webp",
+      alt: "Capa do projeto TaskPro",
+      hrefProject: "https://task-pro-flame.vercel.app/",
+      hrefGitHub: "https://github.com/ivanrods/task-pro",
+      title: "TaskPro",
+      description:
+        "É uma aplicação Full Stack, que permite gerenciar uma lista de tarefas com praticidade e segurança. O usuário pode criar conta, fazer login, marcar como favorita, editar e excluir com uma interface moderna e responsiva.",
+      stacks: [
+        " Next.js ",
+        " TypeScript ",
+        " Zod ",
+        " JWT ",
+        " Prisma  ",
+        " PostgreSQL",
+      ],
+    },
+    {
+      img: "https://i.ibb.co/HT5NCZdF/photo-blog.webp",
+      alt: "Capa do projeto FotoLiked",
+      hrefProject: "https://photo-liked.vercel.app",
+      hrefGitHub: "https://github.com/ivanrods/photo-liked",
+      title: "FotoLiked",
+      description:
+        "É uma aplicação front-end onde você pode explorar imagens e dar likes nas que mais gostar. A aplicação permite navegar por diversas imagens e interagir com elas, proporcionando uma experiência simples e agradavel.",
+      stacks: [
+        "React ",
+        " Tailwindcss ",
+        " Zod ",
+        " Node.js ",
+        " Express",
+        " JWT",
+        " MongoDB ",
+      ],
+    },
+    {
       img: "https://i.ibb.co/CkrR0Ls/cadastros.webp",
       alt: "Capa do projeto Cadastros",
       hrefProject: "https://cadastros-frontend.vercel.app/",
@@ -19,38 +54,29 @@ function Projects() {
         " TypeScript ",
         " Material-UI ",
         " Node.js ",
+        " Express",
+        " JWT",
         " PostgreSQL",
+        "Jest",
       ],
     },
+
     {
-      img: "https://i.ibb.co/Jj57KwmM/task-pro.webp",
-      alt: "Capa do projeto TaskPro",
-      hrefProject: "https://task-pro-flame.vercel.app/",
-      hrefGitHub: "https://github.com/ivanrods/task-pro",
-      title: "TaskPro",
-      description:
-        "É uma aplicação Full Stack, que permite gerenciar uma lista de tarefas com praticidade e segurança. O usuário pode criar conta, fazer login, marcar como favorita, editar e excluir com uma interface moderna e responsiva.",
-      stacks: [" Next.js ", " TypeScript ", " Prisma  ", " JWT ", " Zod "],
-    },
-    {
-      img: "https://i.ibb.co/358BSNzZ/go-menu.webp",
+      img: "https://i.ibb.co/xt4vQPTS/go-menu.png",
       alt: "Capa do projeto GoMenu",
-      hrefProject: "https://donalds-nine.vercel.app/fsw-donal ds",
-      hrefGitHub: "https://github.com/ivanrods/donalds",
+      hrefProject: "https://go-menu-web.vercel.app/",
+      hrefGitHub: "https://github.com/ivanrods/go-menu",
       title: "GoMenu",
       description:
         "É uma aplicação Full Stack que simula um restaurante virtual, onde os usuários podem explorar o cardápio, escolher produtos e adicioná-los à sacola para finalizar a compra. ",
-      stacks: ["Next.js ", " Tailwindcss ", " Shadcn ", " Node.js ", " Prisma"],
-    },
-    {
-      img: "https://i.ibb.co/HT5NCZdF/photo-blog.webp",
-      alt: "Capa do projeto FotoLiked",
-      hrefProject: "https://photo-liked.vercel.app",
-      hrefGitHub: "https://github.com/ivanrods/photo-liked",
-      title: "FotoLiked",
-      description:
-        "É uma aplicação front-end onde você pode explorar imagens e dar likes nas que mais gostar. A aplicação permite navegar por diversas imagens e interagir com elas, proporcionando uma experiência simples e agradavel.",
-      stacks: ["React ", " Tailwindcss ", " Node.js ", " MongoDB ", " JWT"],
+      stacks: [
+        "Next.js ",
+        " TypeScript ",
+        " Tailwindcss ",
+        " Shadcn ",
+        " Zod ",
+        " Prisma",
+      ],
     },
   ];
   const scrollRef = useRef(null);

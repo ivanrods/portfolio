@@ -1,6 +1,6 @@
 function Text({ text }) {
   return (
-    <p className="text-base md:text-lg text-neutral-400 leading-tight my-4  md:text-left">
+    <p className="text-base md:text-lg text-neutral-400 leading-tight  md:text-left">
       {text}
     </p>
   );
