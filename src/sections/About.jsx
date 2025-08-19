@@ -19,12 +19,17 @@ function About() {
         />
 
         <article className="w-full md:w-2/3 flex flex-col gap-4 justify-between">
-          <span className="text-md lg:text-xl text-blue-600 font-medium">
-            Quem sou
-          </span>
-          <h2 className="text-lg lg:text-2xl font-medium">Ivan Rodrigues</h2>
+          <div>
+            <span className="text-md lg:text-xl text-blue-600 font-medium">
+              Quem sou
+            </span>
+            <h2 className="text-lg lg:text-2xl font-medium">
+              Ivan Rodrigues Machado
+            </h2>
+          </div>
+
           <p className="text-md lg:text-lg">Desenvolvedor Full Stack</p>
-          <Text text="Meu nome é Ivan Rodrigues, sou um desenvolvedor Full Stack apaixonado por criar soluções web completas e escaláveis. Com habilidades em front-end e back-end, meu foco é construir aplicações dinâmicas e eficientes, sempre garantindo uma ótima experiência do usuário e desempenho superior. Busco constantemente aprimorar meus conhecimentos e aplicar as melhores práticas em todas as camadas de desenvolvimento, criando projetos que atendem às necessidades dos usuários e dos sistemas de forma integrada." />
+          <Text text="Sou um desenvolvedor Full Stack apaixonado por criar soluções web completas e escaláveis. Com habilidades em front-end e back-end, meu foco é construir aplicações dinâmicas e eficientes, sempre garantindo uma ótima experiência do usuário e desempenho superior. Busco constantemente aprimorar meus conhecimentos e aplicar as melhores práticas em todas as camadas de desenvolvimento, criando projetos que atendem às necessidades dos usuários e dos sistemas de forma integrada." />
 
           <div className="flex gap-4 flex-wrap">
             <Link href="https://wa.me/86994075453" title="Meu WhatsApp">
