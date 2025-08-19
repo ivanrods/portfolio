@@ -32,7 +32,7 @@ function Project({
   return (
     <section
       data-aos="fade-right"
-      className=" flex flex-col items-center justify-between md:flex-row gap-8  bg-neutral-900  p-6 md:p-8 border-2 border-neutral-600 rounded-xl  min-w-[90%] hover:bg-neutral-800"
+      className=" flex flex-col items-center md:flex-row gap-4  bg-neutral-900  p-6 md:p-8 border-2 border-neutral-600 rounded-xl  min-w-[90%] hover:bg-neutral-800"
     >
       <img
         className="w-full md:h-full object-cover rounded-lg"
