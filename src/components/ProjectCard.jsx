@@ -34,7 +34,7 @@ function Project({
       data-aos="fade-right"
       className=" flex flex-col items-center  md:flex-row gap-8  bg-neutral-900  p-6 md:p-8 border-2 border-neutral-600 rounded-xl  min-w-[90%] hover:bg-neutral-800"
     >
-      <img className="w-full h-full " src={img} alt={alt} />
+      <img className="w-full md:h-full object-cover" src={img} alt={alt} />
 
       <article className="w-full h-auto md:h-full flex flex-col gap-4 justify-between ">
         <h2 className="text-lg md:text-2xl font-medium ">{title}</h2>
