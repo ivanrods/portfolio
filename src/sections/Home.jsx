@@ -19,7 +19,7 @@ function Home() {
             "Combinando habilidades em front-end e back-end para criar aplicações dinâmicas, seguras e com ótimo desempenho, entregando soluções completas e integradas que atendem às necessidades do usuário e do sistema.",
           ]}
           typeSpeed={40}
-          className="text-base md:text-lg text-center text-neutral-400 leading-tight  md:text-left "
+          className="text-base md:text-lg text-center text-neutral-400 leading-tight  md:text-left min-h-28 sm:min-h-16"
         />
 
         <button
