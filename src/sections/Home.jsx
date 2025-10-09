@@ -5,7 +5,7 @@ import { ReactTyped } from "react-typed";
 function Home() {
   return (
     <Container color="bg-neutral-950">
-      <section className="flex flex-col gap-8 items-center my-32 md:my-40 justify-center max-w-2xl md:items-start">
+      <section className="flex flex-col gap-8 items-center my-28 md:my-48 justify-center max-w-2xl md:items-start">
         <h1
           data-aos="fade-right"
           className="text-3xl font-medium leading-tight md:text-5xl  text-center md:text-left"
@@ -26,7 +26,7 @@ function Home() {
 
         <button
           data-aos="zoom-in"
-          className="block mx-auto md:mx-0 text-lg bg-transparent rounded-xl border-2 border-custom-color  transition duration-300 hover:bg-blue-600 "
+          className="block mx-auto md:mx-0 text-lg bg-transparent rounded-xl border-2 border-custom-color  transition duration-300 hover:bg-custom-color "
         >
           <a
             className="flex gap-3 items-center px-4 py-3 md:px-6 md:py-4 "
