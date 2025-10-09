@@ -15,7 +15,7 @@ function Experience() {
             2025
           </span>
           <div className=" flex flex-col  justify-center gap-2 items-center mt-1">
-            <div className="p-1.5 bg-blue-800 rounded-full mt-1"></div>
+            <div className="p-1.5 bg-custom-color rounded-full mt-1"></div>
             <div className="w-1 h-full rounded-full bg-neutral-500"></div>
           </div>
           <div className="h-full flex flex-col pb-4">
@@ -37,7 +37,7 @@ function Experience() {
             2025
           </span>
           <div className=" flex flex-col  justify-center gap-2 items-center mt-1">
-            <div className="p-1.5 bg-blue-800 rounded-full mt-1"></div>
+            <div className="p-1.5 bg-custom-color rounded-full mt-1"></div>
             <div className="w-1 h-full rounded-full bg-neutral-500"></div>
           </div>
           <div className="h-full flex flex-col pb-4">

@@ -21,7 +21,7 @@ function About() {
 
         <article className="w-full md:w-2/3 flex flex-col gap-4 justify-between">
           <div>
-            <span className="text-md lg:text-xl text-blue-600 font-medium">
+            <span className="text-md lg:text-xl text-custom-color font-medium">
               Quem sou
             </span>
             <h2 className="text-lg lg:text-2xl font-medium">

@@ -162,7 +162,7 @@ function Projects() {
       <div className="text-center hover:text-neutral-400 mt-4">
         <a
           target="_blanck"
-          className="text-base md:text-lg text-blue-600 hover:text-blue-700"
+          className="text-base md:text-lg text-custom-color hover:opacity-80 transition"
           href="https://github.com/ivanrods?tab=repositories"
         >
           Repositórios no GitHub

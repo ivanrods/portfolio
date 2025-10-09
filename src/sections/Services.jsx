@@ -11,26 +11,26 @@ function Services() {
       <Title title="Serviços:" />
       <section className="flex flex-col w-full py-8">
         <ServiceCard
-          title='Desenvolvimento Front-End'
+          title="Desenvolvimento Front-End"
           description={
             "Criação de interfaces visuais e interativas utilizando HTML, CSS e JavaScript, com o uso de frameworks como React e Next.js. O foco é garantir experiências responsivas e intuitivas, sempre visando uma boa usabilidade e acessibilidade para o usuário."
           }
           positon="self-start"
         >
-          <FaCode className="text-4xl text-blue-600" />
+          <FaCode className="text-4xl text-custom-color" />
         </ServiceCard>
         <small
           data-aos="fade-up"
           className="h-8 w-1 border-l-2 border-neutral-600 mx-auto"
         ></small>
         <ServiceCard
-          title='Desenvolvimento Back-End'
+          title="Desenvolvimento Back-End"
           description={
             "Construção de APIs e servidores com Node.js e Express.js, além de gerenciar dados com bancos como PostgreSQL ou MongoDB. Implementação de autenticação e segurança para garantir a funcionalidade e proteção das aplicações."
           }
           positon="self-end"
         >
-          <TbCodeDots className="text-4xl blue-600 text-blue-600" />
+          <TbCodeDots className="text-4xl blue-600 text-custom-color" />
         </ServiceCard>
         <small
           data-aos="fade-up"
@@ -43,7 +43,7 @@ function Services() {
           }
           positon="self-start"
         >
-          <AiOutlineApi className="text-4xl text-blue-600" />
+          <AiOutlineApi className="text-4xl text-custom-color" />
         </ServiceCard>
       </section>
     </Container>

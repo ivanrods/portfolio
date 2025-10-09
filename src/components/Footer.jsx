@@ -4,7 +4,7 @@ function Footer() {
       <p className="mx-4 text-base md:text-lg">
         Copyright © 2025
         <a
-          className="px-1 text-blue-600 hover:text-blue-700"
+          className="px-1 text-custom-color hover:opacity-80 transition"
           href="https://ivanrods.github.io/Devlinks/"
           target="_blank"
         >
