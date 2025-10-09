@@ -14,7 +14,8 @@ function About() {
       >
         <img
           className="w-full md:w-1/3  object-cover rounded-lg"
-          src="https://i.ibb.co/BVW2w7vb/photo-DQMcg-C8-H.webp"
+          src="https://i.ibb.co/dJkQFrLK/ia-profile.png"
+          //src="https://i.ibb.co/B8kG74C/profile.png"
           alt="Photo"
         />
 
