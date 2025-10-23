@@ -7,18 +7,19 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 function Projects() {
   const projects = [
     {
-      img: "https://i.ibb.co/Jj57KwmM/task-pro.webp",
-      alt: "Capa do projeto TaskPro",
-      hrefProject: "https://task-pro-flame.vercel.app/",
-      hrefGitHub: "https://github.com/ivanrods/task-pro",
-      title: "TaskPro",
+      img: "https://i.ibb.co/hFhxYhJH/balacefy.png",
+      alt: "Capa do projeto Balancefy",
+      hrefProject: "https://balancefy.vercel.app/",
+      hrefGitHub: "https://github.com/ivanrods/balancefy",
+      title: "Balancefy",
       description:
-        "É uma aplicação Full Stack, que permite gerenciar uma lista de tarefas com praticidade e segurança. O usuário pode criar conta, fazer login, marcar como favorita, editar e excluir com uma interface moderna e responsiva.",
+        "É uma aplicação Full Stack para o gerenciamento de finanças pessoais, onde o usuário pode registrar entradas e saídas, visualizar relatórios com gráficos e acompanhar sua saúde financeira.",
       stacks: [
         " Next.js ",
         " TypeScript ",
         " Zod ",
-        " JWT ",
+        " NextAuth ",
+        " Shadcn",
         " Prisma  ",
         " PostgreSQL",
       ],
