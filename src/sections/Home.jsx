@@ -30,7 +30,7 @@ function Home() {
         >
           <a
             className="flex gap-3 items-center px-4 py-3 md:px-6 md:py-4 "
-            href="curriculum-ivan-rodrigues.pdf"
+            href="curriculo-ivan-rodrigues.pdf"
             download
           >
             Download CV <LuDownload size={20} />
