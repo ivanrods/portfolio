@@ -3,7 +3,7 @@ function ServiceCard({ title, description, children, positon }) {
   return (
     <div
       data-aos="fade-up"
-      className={`flex flex-col gap-4 max-w-2xl border-2 border-neutral-600 p-8 rounded-xl transition duration-300 hover:bg-neutral-800
+      className={`flex flex-col gap-4 max-w-2xl border border-neutral-600 p-8 rounded-xl transition duration-300 hover:border-custom-color
     ${positon} `}
     >
       <div className="flex gap-4">

@@ -10,7 +10,7 @@ function About() {
     <Container id="about" color="bg-neutral-950 ">
       <section
         data-aos="fade-up"
-        className="flex flex-col md:flex-row items-stretch gap-8 bg-neutral-900 p-6 md:p-8 border-2 border-neutral-600 rounded-xl hover:bg-neutral-800"
+        className="flex flex-col md:flex-row items-stretch gap-8 bg-neutral-900 p-6 md:p-8 border border-neutral-600 rounded-xl hover:border-custom-color"
       >
         <img
           className="w-full md:w-1/3  object-cover rounded-lg"

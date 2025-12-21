@@ -39,7 +39,7 @@ function Technologies() {
               onMouseEnter={() => handleFigureClick(tecnologia.nome)}
               onMouseLeave={handleMouseLeave}
               data-aos="zoom-in"
-              className={`px-3 md:px-4 py-2 border-2 border-stone-500 transition duration-300 hover:bg-neutral-800 rounded-xl flex items-center gap-2 md:gap-3 ${tecnologia.cor} `}
+              className={`px-3 md:px-4 py-2 border border-stone-500 transition duration-300 hover:border-custom-color rounded-xl flex items-center gap-2 md:gap-3 ${tecnologia.cor}   `}
               role="button"
               tabIndex={0}
               onKeyDown={(e) => {

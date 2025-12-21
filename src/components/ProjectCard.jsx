@@ -32,7 +32,7 @@ function Project({
   return (
     <section
       data-aos="fade-right"
-      className=" flex flex-col items-center md:flex-row gap-4  bg-neutral-900  p-6 md:p-8 border-2 border-neutral-600 rounded-xl  min-w-[90%] hover:bg-neutral-800"
+      className=" flex flex-col items-center md:flex-row gap-4  bg-neutral-900 p-6 border border-neutral-600 rounded-xl  min-w-[90%] hover:border-custom-color"
     >
       <img
         className="w-full md:h-full object-cover rounded-lg"
@@ -49,7 +49,7 @@ function Project({
             <span
               key={index}
               title={getDescriptionByName(stack)}
-              className="flex items-center border-2 border-neutral-600 px-2 py-1 rounded-lg text-xs text-neutral-400 cursor-pointer"
+              className="flex items-center border border-neutral-600 px-2 py-1 rounded-lg text-xs text-neutral-400 cursor-pointer hover:border-custom-color"
             >
               {getIconByName(stack)}
               {stack.trim()}

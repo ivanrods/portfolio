@@ -4,7 +4,7 @@ function Link({ children, href, title }) {
       target="_blank"
       href={href}
       title={title}
-      className="text-2xl md:text-3xl text-custom-color border-2 border-neutral-600 rounded-md p-3 transition duration-300 hover:bg-neutral-00 hover:opacity-80  hover:bg-neutral-800"
+      className="text-2xl md:text-3xl text-custom-color border border-neutral-600 rounded-lg p-3 transition duration-300 hover:border-custom-color"
     >
       {children}
     </a>
