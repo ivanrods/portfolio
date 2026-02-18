@@ -25,6 +25,24 @@ function Projects() {
       ],
     },
     {
+      img: "https://i.ibb.co/ZRnzL30n/chat.webp",
+      alt: "Capa do projeto ConnectChat",
+      hrefProject: "https://connect-chat-client.vercel.app/",
+      hrefGitHub: "https://github.com/ivanrods/connect-chat",
+      title: "ConnectChat",
+      description:
+        "Aplicação de chat em tempo real que simula funcionalidades presentes em aplicações reais como WhatsApp e Telegram, desenvolvida com foco em performance, escalabilidade e experiência do usuário ",
+      stacks: [
+        "React ",
+        " Material-UI",
+        " Zod ",
+        " Node.js ",
+        " Socket.IO",
+        " JWT",
+        " PostgreSQL",
+      ],
+    },
+    {
       img: "https://i.ibb.co/jtZh3Sc/go-menu.webp",
       alt: "Capa do projeto GoMenu",
       hrefProject: "https://go-menu-web.vercel.app/",
@@ -58,24 +76,6 @@ function Projects() {
         " JWT",
         " PostgreSQL",
         "Jest",
-      ],
-    },
-    {
-      img: "https://i.ibb.co/HT5NCZdF/photo-blog.webp",
-      alt: "Capa do projeto FotoLiked",
-      hrefProject: "https://photo-liked.vercel.app",
-      hrefGitHub: "https://github.com/ivanrods/photo-liked",
-      title: "FotoLiked",
-      description:
-        "É uma aplicação front-end onde você pode explorar imagens e dar likes nas que mais gostar. A aplicação permite navegar por diversas imagens e interagir com elas, proporcionando uma experiência simples e agradavel.",
-      stacks: [
-        "React ",
-        " Tailwindcss ",
-        " Zod ",
-        " Node.js ",
-        " Express",
-        " JWT",
-        " MongoDB ",
       ],
     },
   ];

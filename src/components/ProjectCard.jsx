@@ -15,7 +15,7 @@ function Project({
   function getIconByName(name) {
     const cleanName = name.trim().toLowerCase().replace(/\./g, ""); // remove todos os pontos
     const iconObj = techList.find(
-      (icone) => icone.nome.toLowerCase().replace(/\./g, "") === cleanName
+      (icone) => icone.nome.toLowerCase().replace(/\./g, "") === cleanName,
     );
     return iconObj ? (
       <span className={`${iconObj.cor} mr-1`}>{iconObj.componente}</span>
@@ -24,7 +24,7 @@ function Project({
   function getDescriptionByName(name) {
     const cleanName = name.trim().toLowerCase().replace(/\./g, "");
     const tech = techList.find(
-      (t) => t.nome.toLowerCase().replace(/\./g, "") === cleanName
+      (t) => t.nome.toLowerCase().replace(/\./g, "") === cleanName,
     );
     return tech ? tech.descricao : "";
   }
@@ -34,11 +34,7 @@ function Project({
       data-aos="fade-right"
       className=" flex flex-col items-center md:flex-row gap-4  bg-neutral-900 p-6 border border-neutral-600 rounded-xl  min-w-[90%] hover:border-custom-color"
     >
-      <img
-        className="w-full md:h-full object-cover rounded-lg"
-        src={img}
-        alt={alt}
-      />
+      <img className="w-full md:h-full rounded-lg" src={img} alt={alt} />
 
       <article className="w-full h-auto md:h-full flex flex-col gap-4 justify-between ">
         <h2 className="text-lg md:text-2xl font-medium ">{title}</h2>
