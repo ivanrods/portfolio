@@ -6,16 +6,16 @@ import { useState } from "react";
 
 function Technologies() {
   const [text, setText] = useState(
-    "Passe o mouse sobre uma card para ver sua descrição."
+    "Passe o mouse sobre uma card para ver sua descrição.",
   );
 
   function handleFigureClick(tecnologia) {
     const techObj = techList.find(
-      (item) => item.nome.toLowerCase() === tecnologia.toLowerCase()
+      (item) => item.nome.toLowerCase() === tecnologia.toLowerCase(),
     );
     setText(
       techObj?.descricao ||
-        "Passe o mouse sobre uma card para ver sua descrição."
+        "Passe o mouse sobre uma card para ver sua descrição.",
     );
   }
 
@@ -39,7 +39,7 @@ function Technologies() {
               onMouseEnter={() => handleFigureClick(tecnologia.nome)}
               onMouseLeave={handleMouseLeave}
               data-aos="zoom-in"
-              className={`px-3 md:px-4 py-2 border border-stone-500 transition duration-300 hover:border-custom-color rounded-xl flex items-center gap-2 md:gap-3 ${tecnologia.cor}   `}
+              className={`px-3 md:px-4 py-2 bg-neutral-900 border border-stone-500 transition duration-300 hover:border-custom-color rounded-xl flex items-center gap-2 md:gap-3 ${tecnologia.cor}   `}
               role="button"
               tabIndex={0}
               onKeyDown={(e) => {

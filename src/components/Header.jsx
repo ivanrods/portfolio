@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
+import logo from "../assets/logo.png";
 function Header({ activeSection }) {
   const scrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
@@ -14,13 +15,10 @@ function Header({ activeSection }) {
       data-aos="fade-down"
       className="bg-neutral-950 justify-center px-4 fixed w-full z-10"
     >
-      <div className="max-w-6xl flex justify-between py-5 md:py-8 mx-auto flex-wrap ">
-        <p className="uppercase text-xl font-medium md:text-2xl">
-          {" "}
-          &lt; Ivan Rodrigues /&gt;
-        </p>
+      <div className="max-w-6xl flex justify-between py-4 md:py-6 mx-auto flex-wrap ">
+        <img className="h-8" src={logo} alt="" />
         <FiMenu
-          className={`${openMenu ? "hidden" : "flex"} text-3xl md:hidden`}
+          className={`${openMenu ? "hidden" : "flex"} text-2xl md:hidden`}
           onClick={toggleMenu}
         />
         <IoMdClose
