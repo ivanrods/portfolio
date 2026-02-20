@@ -8,16 +8,16 @@ import Title from "../components/Title";
 function Services() {
   return (
     <Container id="services" color="bg-neutral-950">
-      <Title title="Serviços:" />
+      <Title title="Serviços" />
       <section className="flex flex-col w-full py-8">
         <ServiceCard
           title="Desenvolvimento Front-End"
           description={
-            "Criação de interfaces visuais e interativas utilizando HTML, CSS e JavaScript, com o uso de frameworks como React e Next.js. O foco é garantir experiências responsivas e intuitivas, sempre visando uma boa usabilidade e acessibilidade para o usuário."
+            "Desenvolvimento de interfaces modernas e responsivas com React e Next.js, priorizando performance, acessibilidade e excelente experiência do usuário. Criação de layouts bem estruturados, componentes reutilizáveis e aplicações com foco em usabilidade e fluidez."
           }
           positon="self-start"
         >
-          <FaCode className="text-4xl text-custom-color" />
+          <FaCode className="text-4xl text-custom-color transition duration-300 group-hover:scale-110" />
         </ServiceCard>
         <small
           data-aos="fade-up"
@@ -26,11 +26,11 @@ function Services() {
         <ServiceCard
           title="Desenvolvimento Back-End"
           description={
-            "Construção de APIs e servidores com Node.js e Express.js, além de gerenciar dados com bancos como PostgreSQL ou MongoDB. Implementação de autenticação e segurança para garantir a funcionalidade e proteção das aplicações."
+            "Construção de APIs seguras e bem estruturadas com Node.js e Express, implementando autenticação, controle de acesso e integração com banco de dados. Foco em organização de código, escalabilidade e comunicação eficiente entre front-end e servidor."
           }
           positon="self-end"
         >
-          <TbCodeDots className="text-4xl blue-600 text-custom-color" />
+          <TbCodeDots className="text-4xl text-custom-color transition duration-300 group-hover:scale-110" />
         </ServiceCard>
         <small
           data-aos="fade-up"
@@ -39,11 +39,11 @@ function Services() {
         <ServiceCard
           title={"Integração e Deploy"}
           description={
-            "Integração eficiente entre front-end e back-end usando APIs REST ou GraphQL. Realização de deploy de aplicações em plataformas como Vercel, Netlify ou AWS, garantindo desempenho estável e rápido para os usuários finais."
+            "Integração entre front-end e back-end utilizando APIs REST, garantindo comunicação eficiente e dados consistentes. Deploy de aplicações em ambiente de produção, priorizando estabilidade, desempenho e boas práticas."
           }
           positon="self-start"
         >
-          <AiOutlineApi className="text-4xl text-custom-color" />
+          <AiOutlineApi className="text-4xl text-custom-color transition duration-300 group-hover:scale-110" />
         </ServiceCard>
       </section>
     </Container>
