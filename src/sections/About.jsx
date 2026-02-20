@@ -10,10 +10,18 @@ function About() {
     <Container id="about" color="bg-neutral-950 ">
       <section
         data-aos="fade-up"
-        className="flex flex-col md:flex-row items-stretch gap-8 bg-neutral-900 p-6 md:p-8 border border-neutral-600 rounded-xl hover:border-custom-color"
+        className="flex flex-col md:flex-row items-stretch gap-8 
+bg-neutral-900/60 backdrop-blur-sm 
+p-6 md:p-8 
+border border-neutral-700 
+rounded-2xl 
+transition-all duration-300 
+hover:border-custom-color 
+hover:shadow-xl hover:shadow-custom-color/10"
       >
         <img
-          className="w-full md:w-1/3  object-cover rounded-lg"
+          className="w-full md:w-1/3 object-cover rounded-xl 
+transition duration-500 hover:scale-[1.02]"
           src="https://i.ibb.co/dJkQFrLK/ia-profile.png"
           //src="https://i.ibb.co/B8kG74C/profile.png"
           alt="Photo"
@@ -30,7 +38,16 @@ function About() {
           </div>
 
           <p className="text-md lg:text-lg">Desenvolvedor Full Stack</p>
-          <Text text="Sou um desenvolvedor Full Stack apaixonado por criar soluções web completas e escaláveis. Com habilidades em front-end e back-end, meu foco é construir aplicações dinâmicas e eficientes, sempre garantindo uma ótima experiência do usuário e desempenho superior. Busco constantemente aprimorar meus conhecimentos e aplicar as melhores práticas em todas as camadas de desenvolvimento, criando projetos que atendem às necessidades dos usuários e dos sistemas de forma integrada." />
+          <Text
+            text="Sou Desenvolvedor Full Stack com foco no ecossistema JavaScript, 
+                construindo aplicações modernas com React, Next.js e Node.js.
+
+                Tenho experiência na criação de sistemas completos, 
+                desde interfaces performáticas até APIs seguras e bem estruturadas. 
+
+                Meu objetivo é desenvolver soluções escaláveis, 
+                com código limpo, boas práticas e excelente experiência do usuário.."
+          />
 
           <div className="flex gap-4 flex-wrap">
             <Link href="https://wa.me/86994075453" title="Meu WhatsApp">

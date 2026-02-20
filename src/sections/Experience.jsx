@@ -5,50 +5,72 @@ import Title from "../components/Title";
 function Experience() {
   return (
     <Container id="experience" color="bg-neutral-900 h-full">
-      <Title title="Experiência:" />
-      <section className="w-full h-full mx-auto max-w-4xl flex flex-col justify-center py-8">
+      <Title title="Experiência" />
+
+      <section className="w-full mx-auto max-w-4xl flex flex-col gap-10 py-12">
         <div
-          className="w-full h-full flex justify-center flex-row gap-4  "
           data-aos="fade-up"
+          className="group flex gap-6 p-6 rounded-2xl border border-neutral-800 
+    bg-neutral-900/50 backdrop-blur-sm 
+    transition-all duration-300 
+    hover:border-custom-color hover:shadow-xl hover:shadow-custom-color/10"
         >
-          <span className="block h-full bg-neutral-500 px-3 rounded-full text-sm md:text-base mt-1">
-            2025-2026
-          </span>
-          <div className=" flex flex-col  justify-center gap-2 items-center mt-1">
-            <div className="p-1.5 bg-custom-color rounded-full mt-1"></div>
-            <div className="w-1 h-full rounded-full bg-neutral-500"></div>
+          <div className="flex flex-col items-center">
+            <div className="w-4 h-4 bg-custom-color rounded-full mt-2"></div>
+            <div className="w-[2px] flex-1 bg-neutral-700"></div>
           </div>
-          <div className="h-full flex flex-col pb-4 gap-2">
-            <h3 className="text-lg md:text-xl">
+
+          <div className="flex flex-col gap-3">
+            <span className="text-sm text-neutral-400">2025 — Atual</span>
+
+            <h3 className="text-xl font-semibold">
               Desenvolvedor Full Stack Freelancer
             </h3>
-            <p className="text-base md:text-lg">Freelancer</p>
+
+            <p className="text-neutral-400">Atuação independente</p>
+
             <Text
-              text="Desenvolvo aplicações web completas com React, Next.js, Node.js, TypeScript e MongoDB, implementando funcionalidades como CRUD,         autenticação com JWT, rotas protegidas e integração com APIs.
-                Utilizo Tailwind CSS para interfaces modernas e responsivas, sigo boas práticas de código com Git/GitHub e realizo deploys no Vercel (front-end) e Render (back-end)."
+              text=" Desenvolvimento de aplicações web completas, atuando desde a
+              construção de interfaces modernas com React e Next.js até a
+              implementação de APIs seguras com Node.js e MongoDB. Implementação
+              de autenticação com JWT, controle de acesso, CRUDs estruturados,
+              integração com APIs externas e deploy em produção. Foco em
+              arquitetura organizada, código limpo, tipagem forte com TypeScript
+              e boas práticas de versionamento com Git/GitHub."
             />
           </div>
         </div>
+
         <div
-          className="w-full h-full flex justify-center flex-row gap-4 "
           data-aos="fade-up"
+          className="group flex gap-6 p-6 rounded-2xl border border-neutral-800 
+    bg-neutral-900/50 backdrop-blur-sm 
+    transition-all duration-300 
+    hover:border-custom-color hover:shadow-xl hover:shadow-custom-color/10"
         >
-          <span className="block h-full bg-neutral-500 px-3  rounded-full text-sm md:text-base mt-1">
-            2024-2026
-          </span>
-          <div className=" flex flex-col  justify-center gap-2 items-center mt-1">
-            <div className="p-1.5 bg-custom-color rounded-full mt-1"></div>
-            <div className="w-1 h-full rounded-full bg-neutral-500"></div>
+          <div className="flex flex-col items-center">
+            <div className="w-4 h-4 bg-custom-color rounded-full mt-2"></div>
+            <div className="w-[2px] flex-1 bg-neutral-700"></div>
           </div>
-          <div className="h-full flex flex-col pb-4 gap-2">
-            <h3 className="text-lg md:text-xl">
-              Desenvolvedor Full Stack (Projetos Pessoais)
+
+          <div className="flex flex-col gap-3">
+            <span className="text-sm text-neutral-400">2024 — Atual</span>
+
+            <h3 className="text-xl font-semibold">
+              Projetos Pessoais Full Stack
             </h3>
-            <p className="text-base md:text-lg">Autônomo</p>
+
+            <p className="text-neutral-400">
+              Desenvolvimento prático e simulação de cenários reais
+            </p>
+
             <Text
-              text="Desenvolvo aplicações web full stack com React, Next.js, Node.js, TypeScript e MongoDB, incluindo funcionalidades como CRUD, autenticação JWT, filtros e painel administrativo.
-                Organizo o código com boas práticas e versionamento em Git/GitHub, e realizo deploys no Vercel (front) e Render (back).
-                Os projetos foram criados para portfólio, aprendizado e preparação para atuar como freelancer ou CLT."
+              text="Criação de sistemas completos com autenticação, rotas protegidas,
+              painel administrativo, filtros dinâmicos e integração com banco de
+              dados. Estruturação de projetos com arquitetura modular, separação
+              de responsabilidades e deploy em ambiente de produção. Projetos
+              desenvolvidos com foco em performance, escalabilidade e preparação
+              para atuação profissional."
             />
           </div>
         </div>
