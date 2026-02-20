@@ -5,55 +5,78 @@ import Text from "../components/Text";
 import { useState } from "react";
 
 function Technologies() {
-  const [text, setText] = useState(
-    "Passe o mouse sobre uma card para ver sua descrição.",
-  );
+  const defaultText =
+    "Passe o mouse sobre uma tecnologia para visualizar sua descrição detalhada.";
 
-  function handleFigureClick(tecnologia) {
+  const [text, setText] = useState(defaultText);
+
+  function handleFigureHover(tecnologia) {
     const techObj = techList.find(
       (item) => item.nome.toLowerCase() === tecnologia.toLowerCase(),
     );
-    setText(
-      techObj?.descricao ||
-        "Passe o mouse sobre uma card para ver sua descrição.",
-    );
+
+    setText(techObj?.descricao || defaultText);
   }
 
   function handleMouseLeave() {
-    setText("Passe o mouse sobre uma card para ver sua descrição.");
+    setText(defaultText);
   }
 
   return (
-    <Container id="technologies" color="bg-neutral-950 ">
-      <Title title="Conhecimentos:" />
+    <Container
+      id="technologies"
+      color="bg-gradient-to-b from-neutral-950 to-black"
+    >
+      <Title title="Tecnologias & Ferramentas" />
 
-      <div className="flex flex-col justify-center gap-4 xl:flex-row lg:justify-between xl:grid xl:grid-cols-2">
-        <section className="max-w-lg w-full flex justify-center mx-auto lg:mx-0">
-          <Text text={text} />
+      <div className="grid lg:grid-cols-2 gap-12 items-center mt-10">
+        <section className="relative">
+          <div
+            className="
+         
+           
+           
+            min-h-[180px]
+           
+             bg-neutral-900/60 backdrop-blur-sm border border-neutral-800 p-8 rounded-2xl transition-all duration-300 hover:border-custom-color hover:shadow-xl hover:shadow-custom-color/10"
+          >
+            <Text text={text} />
+          </div>
         </section>
 
-        <article className="flex justify-center flex-wrap gap-4">
+        <article className="flex flex-wrap justify-center gap-5">
           {techList.map((tecnologia, index) => (
             <div
               key={index}
-              onMouseEnter={() => handleFigureClick(tecnologia.nome)}
+              onMouseEnter={() => handleFigureHover(tecnologia.nome)}
               onMouseLeave={handleMouseLeave}
               data-aos="zoom-in"
-              className={`px-3 md:px-4 py-2 bg-neutral-900 border border-stone-500 transition duration-300 hover:border-custom-color rounded-xl flex items-center gap-2 md:gap-3 ${tecnologia.cor}   `}
               role="button"
               tabIndex={0}
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") {
-                  handleFigureClick(tecnologia.nome);
+                  handleFigureHover(tecnologia.nome);
                 }
               }}
+              className={`
+                group relative
+                flex items-center gap-3
+                px-5 py-3 cursor-pointer
+                hover:-translate-y-1
+                bg-neutral-900/60 backdrop-blur-sm border border-neutral-800 p-8 rounded-2xl transition-all duration-300 hover:border-custom-color hover:shadow-xl hover:shadow-custom-color/10
+              `}
             >
-              <div className="text-2xl md:text-3xl">
+              <div
+                className={`text-3xl transition-transform duration-300 group-hover:scale-110 ${tecnologia.cor}`}
+              >
                 {tecnologia.componente}
               </div>
-              <p className="text-md md:text-lg text-neutral-400 capitalize ">
+
+              <p className="text-base md:text-lg text-neutral-300 capitalize group-hover:text-white transition-colors">
                 {tecnologia.nome}
               </p>
+
+              <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none bg-gradient-to-r from-custom-color/10 to-transparent" />
             </div>
           ))}
         </article>

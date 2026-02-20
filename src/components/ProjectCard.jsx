@@ -36,7 +36,10 @@ function Project({
   return (
     <section
       data-aos="fade-right"
-      className="group relative flex flex-col p-6 md:flex-row gap-6 bg-gradient-to-br from-neutral-900 to-neutral-950 border border-neutral-800 rounded-2xl overflow-hidden min-w-[95%] transition-all duration-500 hover:border-custom-color hover:shadow-custom-color/10"
+      className="group relative flex flex-col p-6 md:flex-row gap-6 bg-gradient-to-br from-neutral-900 to-neutral-950  overflow-hidden min-w-[95%]  
+      
+      bg-neutral-900/60 backdrop-blur-sm border border-neutral-800  rounded-2xl transition-all duration-300 hover:border-custom-color hover:shadow-xl hover:shadow-custom-color/10
+      "
     >
       <div className="relative w-full md:w-1/2 overflow-hidden rounded-xl border border-neutral-800">
         <img
