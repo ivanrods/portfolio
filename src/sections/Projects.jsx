@@ -13,7 +13,7 @@ function Projects() {
       hrefGitHub: "https://github.com/ivanrods/balancefy",
       title: "Balancefy",
       description:
-        "É uma aplicação Full Stack para o gerenciamento de finanças pessoais, onde o usuário pode registrar entradas e saídas, visualizar relatórios com gráficos e acompanhar sua saúde financeira.",
+        "Aplicação Full Stack para controle financeiro pessoal, com autenticação segura, categorização de transações e visualização de dados em gráficos dinâmicos. Com foco em organização de código e experiência.",
       stacks: [
         " Next.js ",
         " TypeScript ",
@@ -31,7 +31,7 @@ function Projects() {
       hrefGitHub: "https://github.com/ivanrods/connect-chat",
       title: "ConnectChat",
       description:
-        "Aplicação de chat em tempo real que simula funcionalidades presentes em aplicações reais como WhatsApp e Telegram, desenvolvida com foco em performance, escalabilidade e experiência do usuário ",
+        "Aplicação de chat em tempo real com comunicação bidirecional e persistência de mensagens. Projeto estruturado para simular aplicações reais de mensageria, com foco em performance, escalabilidade e gerenciamento de estado.",
       stacks: [
         "React ",
         " Material-UI",
@@ -49,7 +49,7 @@ function Projects() {
       hrefGitHub: "https://github.com/ivanrods/go-menu",
       title: "GoMenu",
       description:
-        "É uma aplicação Full Stack que simula um restaurante virtual, onde os usuários podem explorar o cardápio, escolher produtos e adicioná-los à sacola para finalizar a compra. ",
+        "Sistema Full Stack que simula um restaurante digital, com fluxo completo de navegação, seleção de produtos e gerenciamento de pedidos. Construído com foco em componentização, organização modular e validação de dados.",
       stacks: [
         "Next.js ",
         " TypeScript ",
@@ -66,7 +66,7 @@ function Projects() {
       hrefGitHub: "https://github.com/ivanrods/cadastros-frontend",
       title: "Cadastros",
       description:
-        "É uma aplicação Full Stack, que permite criar usuário, cadastrar, consultar pessoas e cidades de forma simples e eficiente com um layout agradavel, responsivo e paginado. ",
+        "É uma aplicação Full Stack com autenticação, que permite criar usuário, cadastrar, consultar pessoas e cidades de forma simples e eficiente com um layout agradavel, paginação e integração entre front-end e API.",
       stacks: [
         "React ",
         " TypeScript ",

@@ -13,14 +13,18 @@ function Project({
   stacks,
 }) {
   function getIconByName(name) {
-    const cleanName = name.trim().toLowerCase().replace(/\./g, ""); // remove todos os pontos
+    const cleanName = name.trim().toLowerCase().replace(/\./g, "");
     const iconObj = techList.find(
       (icone) => icone.nome.toLowerCase().replace(/\./g, "") === cleanName,
     );
+
     return iconObj ? (
-      <span className={`${iconObj.cor} mr-1`}>{iconObj.componente}</span>
+      <span className={`${iconObj.cor} mr-1 text-sm`}>
+        {iconObj.componente}
+      </span>
     ) : null;
   }
+
   function getDescriptionByName(name) {
     const cleanName = name.trim().toLowerCase().replace(/\./g, "");
     const tech = techList.find(
@@ -32,32 +36,63 @@ function Project({
   return (
     <section
       data-aos="fade-right"
-      className=" flex flex-col items-center md:flex-row gap-4  bg-neutral-900 p-6 border border-neutral-600 rounded-xl  min-w-[90%] hover:border-custom-color"
+      className="group relative flex flex-col p-6 md:flex-row gap-6 bg-gradient-to-br from-neutral-900 to-neutral-950 border border-neutral-800 rounded-2xl overflow-hidden min-w-[95%] transition-all duration-500 hover:border-custom-color hover:shadow-custom-color/10"
     >
-      <img className="w-full md:h-full rounded-lg" src={img} alt={alt} />
+      <div className="relative w-full md:w-1/2 overflow-hidden rounded-xl border border-neutral-800">
+        <img
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 "
+          src={img}
+          alt={alt}
+        />
 
-      <article className="w-full h-auto md:h-full flex flex-col gap-4 justify-between ">
-        <h2 className="text-lg md:text-2xl font-medium ">{title}</h2>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-80" />
+      </div>
 
-        <Text text={description} />
-        <div className="flex flex-wrap gap-2">
-          {stacks.map((stack, index) => (
-            <span
-              key={index}
-              title={getDescriptionByName(stack)}
-              className="flex items-center border border-neutral-600 px-2 py-1 rounded-lg text-xs text-neutral-400 cursor-pointer hover:border-custom-color"
-            >
-              {getIconByName(stack)}
-              {stack.trim()}
-            </span>
-          ))}
+      <article className="w-full md:w-1/2  flex flex-col justify-between gap-5">
+        <div className="flex flex-col gap-4">
+          <h2 className="text-xl md:text-2xl font-semibold tracking-wide text-white group-hover:text-custom-color transition-colors">
+            {title}
+          </h2>
+
+          <Text text={description} />
+
+          <div className="flex flex-wrap gap-2">
+            {stacks.map((stack, index) => (
+              <span
+                key={index}
+                title={getDescriptionByName(stack)}
+                className="flex items-center
+                bg-neutral-800/70
+                border border-neutral-700
+                px-3 py-1.5
+                rounded-full
+                text-xs
+                text-neutral-300
+                backdrop-blur-md
+                transition-all duration-300
+                hover:border-custom-color
+                hover:text-white"
+              >
+                {getIconByName(stack)}
+                {stack.trim()}
+              </span>
+            ))}
+          </div>
         </div>
-        <div className="flex gap-4 flex-wrap ">
+
+        <div className="flex gap-6 pt-4 border-t border-neutral-800">
           <Link href={hrefGitHub} title="Ver repositório do projeto">
-            <FaGithub size={25} />
+            <div className="flex items-center gap-2 text-neutral-400 hover:text-white transition-colors">
+              <FaGithub size={20} />
+              <span className="text-sm">Código</span>
+            </div>
           </Link>
+
           <Link href={hrefProject} title="Ver deploy do projeto">
-            <FaGlobe size={25} />
+            <div className="flex items-center gap-2 text-neutral-400 hover:text-white transition-colors">
+              <FaGlobe size={20} />
+              <span className="text-sm">Deploy</span>
+            </div>
           </Link>
         </div>
       </article>
