@@ -18,24 +18,38 @@ function Home() {
 
         <ReactTyped
           strings={[
-            "Combinando habilidades em front-end e back-end para criar aplicações dinâmicas, seguras e com ótimo desempenho, entregando soluções completas e integradas que atendem às necessidades do usuário e do sistema.",
+            "Desenvolvimento Full Stack | React • Next.js • Node.js",
+            "Criação de aplicações rápidas, escaláveis e seguras",
+            "Interfaces modernas com foco em performance e experiência do usuário",
           ]}
-          typeSpeed={40}
-          className="text-base md:text-lg text-center text-neutral-400 leading-tight  min-h-28 sm:min-h-16"
+          typeSpeed={50}
+          backSpeed={30}
+          loop
+          className="text-lg md:text-xl text-neutral-400 min-h-[40px]"
         />
-
-        <button
-          data-aos="fade-up"
-          className="block mx-auto md:mx-0 text-lg bg-transparent rounded-xl border-2 border-custom-color  transition duration-300 hover:bg-custom-color "
-        >
+        <div className="flex flex-col sm:flex-row gap-4 mt-4">
+          {/* CTA Principal */}
           <a
-            className="flex gap-3 items-center px-4 py-3 md:px-6 md:py-4 "
             href="curriculo-ivan-rodrigues.pdf"
             download
+            className="group rounded-xl bg-custom-color px-6 py-3 text-md font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-custom-color/40 flex items-center gap-3"
           >
-            Download CV <LuDownload size={20} />
+            Download CV
+            <LuDownload className="transition-transform duration-300 group-hover:translate-y-1" />
           </a>
-        </button>
+
+          {/* CTA Secundário */}
+          <button
+            onClick={() =>
+              document
+                .getElementById("projects")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+            className="rounded-xl border border-neutral-600 px-6 py-3 text-md text-neutral-300 transition-all duration-300 hover:border-custom-color hover:text-white"
+          >
+            Ver Projetos
+          </button>
+        </div>
       </section>
     </Container>
   );
