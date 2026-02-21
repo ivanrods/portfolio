@@ -22,7 +22,7 @@ function Header({ activeSection }) {
         />
 
         <ul className="hidden md:flex gap-6 text-neutral-400">
-          {["about", "experience", "services", "projects", "technologies"].map(
+          {["Sobre", "Experiência", "Serviços", "Projetos", "Tecnologias"].map(
             (item) => (
               <li
                 key={item}
@@ -52,7 +52,7 @@ function Header({ activeSection }) {
           onClick={() => setOpenMenu(false)}
         />
 
-        {["about", "experience", "services", "projects", "technologies"].map(
+        {["Sobre", "Experiência", "Serviços", "Projetos", "Tecnologias"].map(
           (item) => (
             <button
               key={item}

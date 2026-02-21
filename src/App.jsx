@@ -1,15 +1,15 @@
 import Header from "./components/Header";
-import Home from "./sections/Home";
-import About from "./sections/About";
-import Projects from "./sections/Projects";
-import Services from "./sections/Services";
-import Technologies from "./sections/Technologies";
+import Home from "./components/Home";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Services from "./components/Services";
+import Projects from "./components/Projects";
+import Technologies from "./components/Technologies";
 import Footer from "./components/Footer";
 
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Experience from "./sections/Experience";
 
 function App() {
   const [activeSection, setActiveSection] = useState("");
@@ -25,7 +25,7 @@ function App() {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -44,7 +44,7 @@ function App() {
       <Header activeSection={activeSection} />
       <Home />
       <About />
-      <Experience/>
+      <Experience />
       <Services />
       <Projects />
       <Technologies />
