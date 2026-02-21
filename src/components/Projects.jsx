@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { FaGithub, FaGlobe } from "react-icons/fa";
-import { techList } from "../utils/techList";
+import { techList } from "../utils/stacks-list.js";
 
 function ProjectCard({
   img,
@@ -20,7 +20,7 @@ function ProjectCard({
 
     return iconObj ? (
       <span className={`${iconObj.cor} mr-1 text-sm`}>
-        {iconObj.componente}
+        <iconObj.componente />
       </span>
     ) : null;
   }

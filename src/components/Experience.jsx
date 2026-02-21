@@ -50,7 +50,7 @@ function Experience() {
                 <div className="w-4 h-4 bg-custom-color rounded-full mt-2"></div>
 
                 {index !== experiences.length && (
-                  <div className="w-[2px] flex-1 bg-neutral-700"></div>
+                  <div className="w-0.5 flex-1 bg-neutral-700"></div>
                 )}
               </div>
 

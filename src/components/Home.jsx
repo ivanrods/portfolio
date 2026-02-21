@@ -25,7 +25,7 @@ function Home() {
             typeSpeed={50}
             backSpeed={30}
             loop
-            className="text-lg md:text-xl text-neutral-400 min-h-[40px]"
+            className="text-lg md:text-xl text-neutral-400 min-h-10"
           />
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
             <a

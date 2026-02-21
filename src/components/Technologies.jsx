@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { techList } from "../utils/techList";
+import { techList } from "../utils/stacks-list.js";
 
 function Technologies() {
   const defaultText =
@@ -59,7 +59,7 @@ function Technologies() {
                 <div
                   className={`text-3xl transition-transform duration-300 group-hover:scale-110 ${tecnologia.cor}`}
                 >
-                  {tecnologia.componente}
+                  <tecnologia.componente />
                 </div>
 
                 <p className="text-base md:text-lg text-neutral-300 capitalize group-hover:text-white transition-colors">
