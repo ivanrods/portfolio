@@ -1,14 +1,4 @@
 import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJsSquare,
-  FaReact,
-  FaGitAlt,
-  FaFigma,
-  FaNodeJs,
-} from "react-icons/fa";
-import { RiTailwindCssFill, RiNextjsLine } from "react-icons/ri";
-import {
   SiTypescript,
   SiJest,
   SiShadcnui,
@@ -18,142 +8,160 @@ import {
   SiMongodb,
   SiZod,
   SiJsonwebtokens,
+  SiRedux,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiPostgresql,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiReact,
+  SiGitforwindows,
+  SiFigma,
+  SiNodedotjs,
 } from "react-icons/si";
-
-import { BiLogoPostgresql } from "react-icons/bi";
 
 export const techList = [
   {
     nome: "HTML",
     cor: "text-orange-600",
-    componente: <FaHtml5 />,
+    componente: <SiHtml5 />,
     descricao:
-      "HTML (HyperText Markup Language) é a linguagem usada para estruturar o conteúdo de páginas na web, definindo elementos como títulos, parágrafos, imagens e links.",
+      "Estruturação semântica de aplicações web com foco em acessibilidade (ARIA), SEO e organização de layout, garantindo base sólida para estilização e escalabilidade.",
   },
   {
     nome: "CSS",
     cor: "text-blue-600",
-    componente: <FaCss3Alt />,
+    componente: <SiCss3 />,
     descricao:
-      "CSS (Cascading Style Sheets) é usado para estilizar o conteúdo da web, controlando cores, layouts, fontes e responsividade.",
+      "Criação de layouts responsivos utilizando Flexbox e Grid, com foco em design moderno, consistência visual e performance.",
   },
   {
     nome: "JavaScript",
     cor: "text-yellow-400",
-    componente: <FaJsSquare />,
+    componente: <SiJavascript />,
     descricao:
-      "JavaScript é uma linguagem de programação usada para adicionar interatividade e dinamismo às páginas web.",
-  },
-  {
-    nome: "Tailwindcss",
-    cor: "text-blue-400",
-    componente: <RiTailwindCssFill />,
-    descricao:
-      "Tailwind CSS é um framework de utilitários para estilização rápida e consistente em projetos web.",
-  },
-  {
-    nome: "React",
-    cor: "text-blue-400",
-    componente: <FaReact />,
-    descricao:
-      "React é uma biblioteca JavaScript para construir interfaces de usuário de forma eficiente e componentizada.",
-  },
-  {
-    nome: "Next.js",
-    cor: "text-gray-300",
-    componente: <RiNextjsLine />,
-    descricao:
-      "Next.js é um framework React que permite criar aplicativos web rápidos e otimizados, oferecendo:",
+      "Desenvolvimento de funcionalidades dinâmicas e manipulação eficiente de estados e eventos, aplicando boas práticas de organização e modularização.",
   },
   {
     nome: "TypeScript",
     cor: "text-blue-500",
     componente: <SiTypescript />,
     descricao:
-      "TypeScript é uma linguagem de programação que estende o JavaScript com tipagem estática.",
+      "Tipagem estática para maior segurança, previsibilidade e manutenção de código em projetos de médio e grande porte.",
   },
   {
-    nome: "Figma",
-    cor: "text-red-600",
-    componente: <FaFigma />,
+    nome: "Tailwindcss",
+    cor: "text-blue-400",
+    componente: <SiTailwindcss />,
     descricao:
-      "Figma é uma ferramenta de design colaborativa usada para criar interfaces de usuário e protótipos.",
-  },
-  {
-    nome: "Node.js",
-    cor: "text-green-600",
-    componente: <FaNodeJs />,
-    descricao:
-      "Node.js é um ambiente de execução JavaScript do lado do servidor, permitindo a construção de aplicações escaláveis.",
-  },
-  {
-    nome: "PostgreSQL",
-    cor: "text-blue-500",
-    componente: <BiLogoPostgresql />,
-    descricao:
-      "PostgreSQL é um sistema gerenciador de banco de dados objeto relacional, desenvolvido como projeto de código aberto.",
-  },
-  {
-    nome: "Jest",
-    cor: "text-orange-700",
-    componente: <SiJest />,
-    descricao:
-      "Jest é um framework de teste em JavaScript projetado para garantir a correção de qualquer código JavaScript.",
-  },
-  {
-    nome: "Git",
-    cor: "text-orange-600",
-    componente: <FaGitAlt />,
-    descricao:
-      "Git é um sistema de controle de versão distribuído usado para gerenciar o histórico de projetos de software.",
+      "Estilização rápida e consistente utilizando abordagem utility-first, mantendo padronização visual e alta produtividade no desenvolvimento.",
   },
   {
     nome: "Shadcn",
     cor: "text-gray-100",
     componente: <SiShadcnui />,
     descricao:
-      "Shadcn/ui é uma coleção de componentes de interface do usuário (UI) para projetos web, construída sobre o Tailwind CSS e Radix UI.",
+      "Utilização de componentes acessíveis e reutilizáveis para acelerar o desenvolvimento mantendo consistência visual.",
   },
+  {
+    nome: "React",
+    cor: "text-blue-400",
+    componente: <SiReact />,
+    descricao:
+      "Construção de interfaces componentizadas e reutilizáveis, com gerenciamento de estado, hooks e foco em escalabilidade e performance.",
+  },
+  {
+    nome: "Next.js",
+    cor: "text-neutral-600",
+    componente: <SiNextdotjs />,
+    descricao:
+      "Desenvolvimento de aplicações Full Stack com SSR, SSG e rotas dinâmicas, priorizando performance, SEO e organização de projeto.",
+  },
+  {
+    nome: "Redux",
+    cor: "text-violet-700",
+    componente: <SiRedux />,
+    descricao:
+      "Gerenciamento previsível de estado global em aplicações complexas, mantendo fluxo de dados organizado e escalável.",
+  },
+
+  {
+    nome: "Figma",
+    cor: "text-red-600",
+    componente: <SiFigma />,
+    descricao:
+      "Prototipação e análise de interfaces para transformar layouts em aplicações funcionais com fidelidade visual.",
+  },
+  {
+    nome: "Node.js",
+    cor: "text-green-600",
+    componente: <SiNodedotjs />,
+    descricao:
+      "Construção de APIs e serviços backend escaláveis utilizando arquitetura modular e integração com bancos de dados.",
+  },
+  {
+    nome: "PostgreSQL",
+    cor: "text-blue-500",
+    componente: <SiPostgresql />,
+    descricao:
+      "Modelagem de banco relacional com foco em integridade de dados, relacionamentos estruturados e consultas otimizadas.",
+  },
+  {
+    nome: "Jest",
+    cor: "text-orange-700",
+    componente: <SiJest />,
+    descricao:
+      "Criação de testes unitários e de integração para garantir confiabilidade, estabilidade e qualidade do código.",
+  },
+  {
+    nome: "Git",
+    cor: "text-orange-600",
+    componente: <SiGitforwindows />,
+    descricao:
+      "Versionamento de código com controle de branches, commits organizados e colaboração eficiente em projetos.",
+  },
+
   {
     nome: "Express",
     cor: "text-gray-100",
     componente: <SiExpress />,
     descricao:
-      "Express.js é um framework web estruturado, escrito em JavaScript que roda sobre o ambiente Node.js em tempo de execução.",
+      "Desenvolvimento de APIs REST estruturadas com middleware, rotas organizadas e integração com autenticação e banco de dados.",
   },
   {
     nome: "Prisma",
     cor: "text-gray-100",
     componente: <SiPrisma />,
     descricao:
-      "O Prisma ORM é uma ferramenta moderna que facilita a interação com bancos de dados em aplicações Node.js e TypeScript.",
+      "ORM moderno para modelagem e manipulação de banco de dados com tipagem segura e consultas otimizadas.",
   },
   {
     nome: "Graphql",
     cor: "text-pink-600",
     componente: <SiGraphql />,
     descricao:
-      "GraphQL é uma linguagem de consulta e runtime para APIs que permite aos clientes solicitar exatamente os dados necessários, evitando o excesso de dados comuns em APIs REST.",
+      "Construção de APIs flexíveis permitindo consultas específicas e eficientes, reduzindo overfetching comum em REST.",
   },
   {
     nome: "Mongodb",
     cor: "text-green-600",
     componente: <SiMongodb />,
     descricao:
-      "O MongoDB é um sistema de gerenciamento de banco de dados (SGBD) NoSQL de código aberto, que utiliza documentos flexíveis em vez de tabelas e linhas para armazenar e processar dados.",
+      "Banco NoSQL orientado a documentos para aplicações que exigem flexibilidade de estrutura e alta escalabilidade.",
   },
   {
     nome: "Zod",
     cor: "text-blue-600",
     componente: <SiZod />,
     descricao:
-      "Zod é uma biblioteca de validação de esquema de dados para JavaScript e TypeScript.",
+      "Validação robusta de dados e schemas em aplicações TypeScript, garantindo segurança nas entradas e integrações.",
   },
   {
     nome: "JWT",
     cor: "text-red-600",
     componente: <SiJsonwebtokens />,
     descricao:
-      "JWT, ou JSON Web Token, é um padrão aberto para criar tokens de acesso de forma segura entre duas partes, geralmente um cliente e um servidor.",
+      "Implementação de autenticação segura baseada em tokens para controle de acesso e proteção de rotas.",
   },
 ];
