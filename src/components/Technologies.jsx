@@ -22,7 +22,7 @@ function Technologies() {
   return (
     <div
       id="Tecnologias"
-      className="px-4 justify-center bg-gradient-to-b from-neutral-950 to-black"
+      className="px-4 justify-center bg-linear-to-b from-neutral-950 to-black"
     >
       <div className="max-w-6xl py-12 md:py-24 mx-auto">
         <h2 className="text-2xl md:text-3xl font-medium py-4 mx-0 ">
@@ -66,7 +66,7 @@ function Technologies() {
                   {tecnologia.nome}
                 </p>
 
-                <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none bg-gradient-to-r from-custom-color/10 to-transparent" />
+                <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none bg-linear-to-r from-custom-color/10 to-transparent" />
               </div>
             ))}
           </article>

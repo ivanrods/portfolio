@@ -36,7 +36,7 @@ function ProjectCard({
   return (
     <section
       data-aos="fade-right"
-      className="group relative flex flex-col p-6 md:flex-row gap-6 bg-gradient-to-br from-neutral-900 to-neutral-950  overflow-hidden min-w-[95%] bg-neutral-900/60 backdrop-blur-sm border border-neutral-800 rounded-2xl transition-all duration-300 hover:border-custom-colo hover:shadow-xl hover:shadow-custom-color/10
+      className="group relative flex flex-col p-6 md:flex-row gap-6 bg-linear-to-br from-neutral-900 to-neutral-950  overflow-hidden min-w-[95%] bg-neutral-900/60 backdrop-blur-sm border border-neutral-800 rounded-2xl transition-all duration-300 hover:border-custom-colo hover:shadow-xl hover:shadow-custom-color/10
       "
     >
       <div className="relative w-full md:w-1/2 overflow-hidden rounded-xl border border-neutral-800">
@@ -45,7 +45,7 @@ function ProjectCard({
           src={img}
           alt={alt}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-80" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent opacity-80" />
       </div>
 
       <article className="w-full md:w-1/2  flex flex-col justify-between gap-5">
