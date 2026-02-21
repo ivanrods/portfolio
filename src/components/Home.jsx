@@ -40,7 +40,7 @@ function Home() {
             <button
               onClick={() =>
                 document
-                  .getElementById("projects")
+                  .getElementById("Projetos")
                   .scrollIntoView({ behavior: "smooth" })
               }
               className="rounded-xl border border-neutral-600 px-6 py-3 text-md text-neutral-300 transition-all duration-300 hover:border-custom-color hover:text-white"
