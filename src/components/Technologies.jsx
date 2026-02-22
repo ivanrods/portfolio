@@ -20,17 +20,14 @@ function Technologies() {
   }
 
   return (
-    <div
-      id="Tecnologias"
-      className="px-4 justify-center bg-linear-to-b from-neutral-950 to-black"
-    >
+    <div id="Tecnologias" className="px-4 justify-center bg-neutral-950">
       <div className="max-w-6xl py-12 md:py-24 mx-auto">
         <h2 className="text-2xl md:text-3xl font-medium py-4 mx-0 ">
           Tecnologias & Ferramentas
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mt-10">
-          <section className="relative">
+          <section className="relative" data-aos="fade-right">
             <div className="min-h-[180px]bg-neutral-900/60 backdrop-blur-sm border border-neutral-800 p-8 rounded-2xl transition-all duration-300 hover:border-custom-color hover:shadow-xl hover:shadow-custom-color/10">
               <p className="text-neutral-300 leading-relaxed  md:text-left hover:text-neutral-300">
                 {text}

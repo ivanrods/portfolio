@@ -25,9 +25,12 @@ function Home() {
             typeSpeed={50}
             backSpeed={30}
             loop
-            className="text-lg md:text-xl text-neutral-400 min-h-10"
+            className="text-lg md:text-xl text-neutral-400 text-center min-h-10 "
           />
-          <div className="flex flex-col sm:flex-row gap-4 mt-4">
+          <div
+            data-aos="fade-up"
+            className="flex flex-col sm:flex-row gap-4 mt-4"
+          >
             <a
               href="curriculo-ivan-rodrigues.pdf"
               download

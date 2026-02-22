@@ -42,7 +42,10 @@ function Header() {
 
   return (
     <header className="bg-neutral-950 px-4 fixed w-full z-50">
-      <div className="max-w-6xl flex justify-between items-center py-4  mx-auto">
+      <div
+        data-aos="fade-down"
+        className="max-w-6xl flex justify-between items-center py-4  mx-auto"
+      >
         <img className="h-8" src={logo} alt="Logo" />
 
         <FiMenu

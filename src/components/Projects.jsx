@@ -36,8 +36,7 @@ function ProjectCard({
   return (
     <section
       data-aos="fade-right"
-      className="group relative flex flex-col p-6 md:flex-row gap-6 bg-linear-to-br from-neutral-900 to-neutral-950  overflow-hidden min-w-[95%] bg-neutral-900/60 backdrop-blur-sm border border-neutral-800 rounded-2xl transition-all duration-300 hover:border-custom-colo hover:shadow-xl hover:shadow-custom-color/10
-      "
+      className="group relative flex flex-col p-6 md:flex-row gap-6 bg-linear-to-br from-neutral-900 to-neutral-950  overflow-hidden min-w-[95%] bg-neutral-900/60 backdrop-blur-sm border  hover:border-custom-colo hover:shadow-xl hover:shadow-custom-color/10 border-neutral-800  rounded-2xl transition-all duration-300 hover:border-custom-color"
     >
       <div className="relative w-full md:w-1/2 overflow-hidden rounded-xl border border-neutral-800">
         <img
@@ -113,7 +112,7 @@ function Projects() {
       hrefGitHub: "https://github.com/ivanrods/balancefy",
       title: "Balancefy",
       description:
-        "Aplicação Full Stack para controle financeiro pessoal, com autenticação segura, categorização de transações e visualização de dados em gráficos dinâmicos. Com foco em organização de código e experiência.",
+        "Aplicação Full Stack para gestão financeira pessoal com autenticação segura, controle de transações e visualização de dados em gráficos interativos. Desenvolvida com arquitetura organizada utilizando Next.js App Router, Prisma e PostgreSQL, aplicando validação robusta com Zod e boas práticas de separação de responsabilidades.",
       stacks: [
         " Next.js ",
         " TypeScript ",
@@ -131,7 +130,7 @@ function Projects() {
       hrefGitHub: "https://github.com/ivanrods/connect-chat",
       title: "ConnectChat",
       description:
-        "Aplicação de chat em tempo real com comunicação bidirecional e persistência de mensagens. Projeto estruturado para simular aplicações reais de mensageria, com foco em performance, escalabilidade e gerenciamento de estado.",
+        "Aplicação de chat em tempo real com comunicação bidirecional via Socket.IO e autenticação baseada em JWT. Implementa persistência de mensagens em banco de dados e gerenciamento eficiente de estado no front-end. Estruturado para simular aplicações reais de mensageria com foco em escalabilidade e organização de código.",
       stacks: [
         "React ",
         " Material-UI",
@@ -160,22 +159,21 @@ function Projects() {
       ],
     },
     {
-      img: "https://i.ibb.co/CkrR0Ls/cadastros.webp",
-      alt: "Capa do projeto Cadastros",
-      hrefProject: "https://cadastros-frontend.vercel.app/",
-      hrefGitHub: "https://github.com/ivanrods/cadastros-frontend",
-      title: "Cadastros",
+      img: "https://i.ibb.co/HT5NCZdF/photo-blog.webp",
+      alt: "Capa do projeto FotoLiked",
+      hrefProject: "https://photo-liked.vercel.app",
+      hrefGitHub: "https://github.com/ivanrods/photo-liked",
+      title: "FotoLiked",
       description:
-        "É uma aplicação Full Stack com autenticação, que permite criar usuário, cadastrar, consultar pessoas e cidades de forma simples e eficiente com um layout agradavel, paginação e integração entre front-end e API.",
+        "Aplicação web para exploração e interação com imagens, permitindo autenticação de usuários e sistema de likes persistente. Backend desenvolvido com Node.js e Express, utilizando JWT para controle de acesso e MongoDB para armazenamento de dados.",
       stacks: [
         "React ",
-        " TypeScript ",
-        " Material-UI ",
+        " Tailwindcss ",
+        " Zod ",
         " Node.js ",
         " Express",
         " JWT",
-        " PostgreSQL",
-        "Jest",
+        " MongoDB ",
       ],
     },
   ];
