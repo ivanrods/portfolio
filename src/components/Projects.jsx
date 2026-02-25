@@ -125,10 +125,10 @@ function Projects() {
     },
     {
       img: "https://i.ibb.co/ZRnzL30n/chat.webp",
-      alt: "Capa do projeto ConnectChat",
-      hrefProject: "https://connect-chat-client.vercel.app/",
-      hrefGitHub: "https://github.com/ivanrods/connect-chat",
-      title: "ConnectChat",
+      alt: "Capa do projeto ConnectFly",
+      hrefProject: "https://connectfly.vercel.app/",
+      hrefGitHub: "https://github.com/ivanrods/connectfly",
+      title: "ConnectFly",
       description:
         "Aplicação de chat em tempo real com comunicação bidirecional via Socket.IO e autenticação baseada em JWT. Implementa persistência de mensagens em banco de dados e gerenciamento eficiente de estado no front-end. Estruturado para simular aplicações reais de mensageria com foco em escalabilidade e organização de código.",
       stacks: [
