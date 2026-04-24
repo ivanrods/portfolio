@@ -106,13 +106,13 @@ function ProjectCard({
 function Projects() {
   const projects = [
     {
-      img: "https://i.ibb.co/hFhxYhJH/balacefy.png",
+      img: "https://i.ibb.co/ksLjcRZh/balacefly-cover.jpg",
       alt: "Capa do projeto Balancefy",
       hrefProject: "https://balancefy.vercel.app/",
       hrefGitHub: "https://github.com/ivanrods/balancefy",
       title: "Balancefy",
       description:
-        "Aplicação Full Stack para gestão financeira pessoal com autenticação segura, controle de transações e visualização de dados em gráficos interativos. Desenvolvida com arquitetura organizada utilizando Next.js App Router, Prisma e PostgreSQL, aplicando validação robusta com Zod e boas práticas de separação de responsabilidades.",
+        "Aplicação para gestão financeira pessoal com autenticação segura, controle de transações e visualização de dados em gráficos interativos. Desenvolvida com arquitetura organizada utilizando Next.js App Router, Prisma e PostgreSQL, aplicando validação robusta com Zod e boas práticas de separação de responsabilidades.",
       stacks: [
         " Next.js ",
         " TypeScript ",
@@ -124,7 +124,25 @@ function Projects() {
       ],
     },
     {
-      img: "https://i.ibb.co/ZRnzL30n/chat.webp",
+      img: "https://i.ibb.co/F4SSKq4s/commercefly-cover.jpg",
+      alt: "Capa do projeto CommerceFly",
+      hrefProject: "https://commercefly.vercel.app/",
+      hrefGitHub: "https://github.com/ivanrods/commercefly",
+      title: "CommerceFly",
+      description:
+        "Aplicação completa de e-commerce desenvolvida com foco em arquitetura moderna, boas práticas e integração com serviços reais como autenticação e pagamentos que simula um e-commerce real, permitindo que usuários naveguem por produtos, adicionem itens ao carrinho e realizem compras com pagamento integrado.",
+      stacks: [
+        "Next.js ",
+        " TypeScript ",
+        " Tailwindcss ",
+        " Shadcn ",
+        " Stripe ",
+        " Clerk ",
+        " Prisma",
+      ],
+    },
+    {
+      img: "https://i.ibb.co/cc72FRhJ/connectfly-cover.jpg",
       alt: "Capa do projeto ConnectFly",
       hrefProject: "https://connectfly.vercel.app/",
       hrefGitHub: "https://github.com/ivanrods/connectfly",
@@ -142,30 +160,13 @@ function Projects() {
       ],
     },
     {
-      img: "https://i.ibb.co/jtZh3Sc/go-menu.webp",
-      alt: "Capa do projeto GoMenu",
-      hrefProject: "https://go-menu-web.vercel.app/",
-      hrefGitHub: "https://github.com/ivanrods/go-menu",
-      title: "GoMenu",
-      description:
-        "Sistema Full Stack que simula um restaurante digital, com fluxo completo de navegação, seleção de produtos e gerenciamento de pedidos. Construído com foco em componentização, organização modular e validação de dados.",
-      stacks: [
-        "Next.js ",
-        " TypeScript ",
-        " Tailwindcss ",
-        " Shadcn ",
-        " Zod ",
-        " Prisma",
-      ],
-    },
-    {
-      img: "https://i.ibb.co/HT5NCZdF/photo-blog.webp",
+      img: "https://i.ibb.co/gLZ0g4gZ/photo-liked-cover.jpg",
       alt: "Capa do projeto FotoLiked",
       hrefProject: "https://photo-liked.vercel.app",
       hrefGitHub: "https://github.com/ivanrods/photo-liked",
       title: "FotoLiked",
       description:
-        "Aplicação web para exploração e interação com imagens, permitindo autenticação de usuários e sistema de likes persistente. Backend desenvolvido com Node.js e Express, utilizando JWT para controle de acesso e MongoDB para armazenamento de dados.",
+        "Aplicação web Full Stack completa para exploração e interação com  milhares imagens, permitindo autenticação de usuários e sistema de likes persistente visualizar e baixar imagens de otima qualidade. Backend desenvolvido com Node.js e Express, utilizando JWT para controle de acesso e MongoDB para armazenamento de dados.",
       stacks: [
         "React ",
         " Tailwindcss ",
