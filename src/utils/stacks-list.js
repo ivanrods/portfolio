@@ -19,6 +19,7 @@ import {
   SiGitforwindows,
   SiFigma,
   SiNodedotjs,
+  SiDocker,
 } from "react-icons/si";
 
 export const techList = [
@@ -163,5 +164,5 @@ export const techList = [
     componente: SiJsonwebtokens,
     descricao:
       "Implementação de autenticação segura baseada em tokens para controle de acesso e proteção de rotas.",
-  },
+  }
 ];
