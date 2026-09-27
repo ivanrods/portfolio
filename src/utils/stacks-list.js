@@ -13,7 +13,7 @@ import {
   SiNextdotjs,
   SiPostgresql,
   SiHtml5,
-  SiCss3,
+  SiCss,
   SiJavascript,
   SiReact,
   SiGitforwindows,
@@ -36,7 +36,7 @@ export const techList = [
   {
     nome: "CSS",
     cor: "text-blue-600",
-    componente: SiCss3,
+    componente: SiCss,
     descricao:
       "Criação de layouts responsivos utilizando Flexbox e Grid, com foco em design moderno, consistência visual e performance.",
   },
