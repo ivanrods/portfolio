@@ -34,7 +34,7 @@ function About() {
         >
           <img
             className="w-full md:w-1/3 object-cover rounded-xl transition duration-500 hover:scale-[1.02]"
-            src="https://i.ibb.co/dJkQFrLK/ia-profile.png"
+            src="/images/profile.webp"
             alt="Photo"
           />
 

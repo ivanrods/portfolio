@@ -106,7 +106,7 @@ function ProjectCard({
 function Projects() {
   const projects = [
     {
-      img: "https://i.ibb.co/ksLjcRZh/balacefly-cover.jpg",
+      img: "/images/balacefly.webp",
       alt: "Capa do projeto Balancefy",
       hrefProject: "https://balancefy.vercel.app/",
       hrefGitHub: "https://github.com/ivanrods/balancefy",
@@ -124,9 +124,9 @@ function Projects() {
       ],
     },
     {
-      img: "https://i.ibb.co/F4SSKq4s/commercefly-cover.jpg",
+      img: "https://i.ibb.co/F4SSKq4s/commercefly.jpg",
       alt: "Capa do projeto CommerceFly",
-      hrefProject: "https://commercefly.vercel.app/",
+      hrefProject: "/images/commercefly.webp",
       hrefGitHub: "https://github.com/ivanrods/commercefly",
       title: "CommerceFly",
       description:
@@ -142,7 +142,7 @@ function Projects() {
       ],
     },
     {
-      img: "https://i.ibb.co/cc72FRhJ/connectfly-cover.jpg",
+      img: "/images/connectfly.webp",
       alt: "Capa do projeto ConnectFly",
       hrefProject: "https://connectfly.vercel.app/",
       hrefGitHub: "https://github.com/ivanrods/connectfly",
@@ -160,7 +160,7 @@ function Projects() {
       ],
     },
     {
-      img: "https://i.ibb.co/byqfbjQ/cadastros.png",
+      img: "/images/cadastros.webp",
       alt: "Capa do projeto cadastros-frontend",
       hrefProject: "https://cadastros-frontend.vercel.app/",
       hrefGitHub: "https://github.com/ivanrods/cadastros-frontend",
