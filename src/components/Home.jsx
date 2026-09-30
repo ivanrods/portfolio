@@ -13,13 +13,13 @@ function Home() {
             <strong className="text-custom-color ">
               Full Stack Developer |{" "}
             </strong>
-            Construindo soluções completas e escaláveis.
+            Construindo soluções completas e modernas.
           </h1>
 
           <ReactTyped
             strings={[
               "Desenvolvimento Full Stack | React • Next.js • Node.js",
-              "Criação de aplicações rápidas, escaláveis e seguras",
+              "Criação de aplicações rápidas, funcionais e seguras",
               "Interfaces modernas com foco em performance e experiência do usuário",
             ]}
             typeSpeed={50}

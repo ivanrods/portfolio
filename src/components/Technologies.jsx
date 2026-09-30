@@ -28,7 +28,7 @@ function Technologies() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mt-10">
           <section className="relative" data-aos="fade-right">
-            <div className="min-h-[180px]bg-neutral-900/60 backdrop-blur-sm border border-neutral-800 p-8 rounded-2xl transition-all duration-300 hover:border-custom-color hover:shadow-xl hover:shadow-custom-color/10">
+            <div className="min-h-[180px]bg-neutral-900/60 backdrop-blur-sm border border-neutral-800 p-8 rounded-2xl transition-all duration-300 hover:border-custom-color ">
               <p className="text-neutral-300 leading-relaxed  md:text-left hover:text-neutral-300">
                 {text}
               </p>

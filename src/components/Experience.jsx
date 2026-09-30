@@ -44,7 +44,7 @@ function Experience() {
             <div
               key={index}
               data-aos="fade-up"
-              className="group flex gap-6 p-6 rounded-2xl border border-neutral-800 bg-neutral-900/50 backdrop-blur-sm transition-all duration-300 hover:border-custom-color hover:shadow-xl hover:shadow-custom-color/10"
+              className="group flex gap-6 p-6 rounded-2xl border border-neutral-800 bg-neutral-900/50 backdrop-blur-sm transition-all duration-300 hover:border-custom-color"
             >
               <div className="flex flex-col items-center">
                 <div className="w-4 h-4 bg-custom-color rounded-full mt-2"></div>

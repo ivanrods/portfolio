@@ -30,7 +30,7 @@ function About() {
       <div className="max-w-6xl py-12 md:py-24 mx-auto">
         <section
           data-aos="fade-up"
-          className="flex flex-col md:flex-row items-stretch gap-8 bg-neutral-900/60 backdrop-blur-sm p-6 md:p-8 border border-neutral-700 rounded-2xl transition-all duration-300 hover:border-custom-color hover:shadow-xl hover:shadow-custom-color/10"
+          className="flex flex-col md:flex-row items-stretch gap-8 bg-neutral-900/60 backdrop-blur-sm p-6 md:p-8 border border-neutral-700 rounded-2xl transition-all duration-300 hover:border-custom-color"
         >
           <img
             className="w-full md:w-1/3 object-cover rounded-xl transition duration-500 hover:scale-[1.02]"
@@ -66,7 +66,7 @@ function About() {
                   title={title}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-2xl md:text-3xl text-custom-color border border-neutral-700 rounded-xl p-3 transition-all duration-300 hover:border-custom-color hover:scale-110 hover:shadow-lg hover:shadow-custom-color/20"
+                  className="text-2xl md:text-3xl text-custom-color border border-neutral-700 rounded-xl p-3 transition-all duration-300 hover:border-custom-color hover:scale-105 hover:text-neutral-300"
                 >
                   <Icon />
                 </a>

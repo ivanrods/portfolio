@@ -41,10 +41,10 @@ function Services() {
               <React.Fragment key={index}>
                 <div
                   data-aos="fade-up"
-                  className={`group flex flex-col gap-5 max-w-2xl bg-neutral-900/60 backdrop-blur-sm p-8 border border-neutral-800  rounded-2xl transition-all duration-300 hover:border-custom-color hover:shadow-xl hover:shadow-custom-color/10 ${position}`}
+                  className={`group flex flex-col gap-5 max-w-2xl bg-neutral-900/60 backdrop-blur-sm p-8 border border-neutral-800  rounded-2xl transition-all duration-300 hover:border-custom-color ${position}`}
                 >
                   <div className="flex gap-4">
-                    <Icon className="text-4xl text-custom-color transition duration-300 group-hover:scale-110" />
+                    <Icon className="text-4xl text-custom-color transition duration-300 group-hover:scale-110 hover:text-neutral-300" />
                     <h3 className="text-xl md:text-2xl font-semibold">
                       {title}
                     </h3>

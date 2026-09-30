@@ -3,7 +3,8 @@ import { FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import logo from "../assets/logo.png";
+
+import { FaCode } from "react-icons/fa";
 
 function Header() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -46,7 +47,10 @@ function Header() {
         data-aos="fade-down"
         className="max-w-6xl flex justify-between items-center py-4  mx-auto"
       >
-        <img className="h-8" src={logo} alt="Logo" />
+        <div className="flex items-center gap-2 text-white">
+          <FaCode className="text-2xl" />
+          <span className="font-bold text-lg">Ivan</span>
+        </div>
 
         <FiMenu
           className="text-2xl md:hidden text-white cursor-pointer"

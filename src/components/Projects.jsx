@@ -36,7 +36,7 @@ function ProjectCard({
   return (
     <section
       data-aos="fade-right"
-      className="group relative flex flex-col p-6 md:flex-row gap-6 bg-linear-to-br from-neutral-900 to-neutral-950  overflow-hidden min-w-[95%] bg-neutral-900/60 backdrop-blur-sm border  hover:border-custom-colo hover:shadow-xl hover:shadow-custom-color/10 border-neutral-800  rounded-2xl transition-all duration-300 hover:border-custom-color"
+      className="group relative flex flex-col p-6 md:flex-row gap-6 bg-linear-to-br from-neutral-900 to-neutral-950  overflow-hidden min-w-[95%] bg-neutral-900/60 backdrop-blur-sm border  hover:border-custom-colo  border-neutral-800  rounded-2xl transition-all duration-300 hover:border-custom-color"
     >
       <div className="relative w-full md:w-1/2 overflow-hidden rounded-xl border border-neutral-800">
         <img
@@ -77,7 +77,7 @@ function ProjectCard({
             title="Ver repositório do projeto"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-2xl md:text-3xl text-custom-color border border-neutral-700 rounded-xl p-3 transition-all duration-300 hover:border-custom-color hover:scale-110 hover:shadow-lg hover:shadow-custom-color/20"
+            className="text-2xl md:text-3xl text-custom-color border border-neutral-700 rounded-xl p-3 transition-all duration-300 hover:border-custom-color hover:scale-105 "
           >
             <div className="flex items-center gap-2 text-neutral-400 hover:text-white transition-colors">
               <FaGithub size={20} />
@@ -90,7 +90,7 @@ function ProjectCard({
             title="Ver deploy do projeto"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-2xl md:text-3xl text-custom-color border border-neutral-700 rounded-xl p-3 transition-all duration-300 hover:border-custom-color hover:scale-110 hover:shadow-lg hover:shadow-custom-color/20"
+            className="text-2xl md:text-3xl text-custom-color border border-neutral-700 rounded-xl p-3 transition-all duration-300 hover:border-custom-color hover:scale-105 "
           >
             <div className="flex items-center gap-2 text-neutral-400 hover:text-white transition-colors">
               <FaGlobe size={20} />
