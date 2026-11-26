@@ -4,13 +4,7 @@ const experiences = [
     title: "Desenvolvedor Full Stack Freelancer",
     subtitle: "Atuação independente",
     description: `
-      Desenvolvimento de aplicações web completas, atuando desde a
-      construção de interfaces modernas com React e Next.js até a
-      implementação de APIs seguras com Node.js e MongoDB. Implementação
-      de autenticação com JWT, controle de acesso, CRUDs estruturados,
-      integração com APIs externas e deploy em produção. Foco em
-      arquitetura organizada, código limpo, tipagem forte com TypeScript
-      e boas práticas de versionamento com Git/GitHub.
+      Desenvolvimento independente de aplicações web, atuando na construção de interfaces modernas, responsivas e intuitivas, implementação de funcionalidades e integração com APIs e bancos de dados. Experiência com React, Next.js, TypeScript e Node.js, aplicando boas práticas de desenvolvimento, organização de código, componentização e separação de responsabilidades. Implementação de autenticação, gerenciamento de dados, validações, integração com serviços externos e publicação de aplicações em produção.
     `,
   },
   {
@@ -18,12 +12,7 @@ const experiences = [
     title: "Projetos Pessoais Full Stack",
     subtitle: "Desenvolvimento prático e simulação de cenários reais",
     description: `
-      Criação de sistemas completos com autenticação, rotas protegidas,
-      painel administrativo, filtros dinâmicos e integração com banco de
-      dados. Estruturação de projetos com arquitetura modular, separação
-      de responsabilidades e deploy em ambiente de produção. Projetos
-      desenvolvidos com foco em performance, escalabilidade e preparação
-      para atuação profissional.
+      Desenvolvimento de aplicações full stack com foco na resolução de problemas reais e aplicação prática de tecnologias utilizadas no mercado. Construção de projetos como o Balancefy, uma aplicação de controle financeiro pessoal com autenticação, dashboards e visualização de dados, e o ConnectFly, uma plataforma de mensageria com comunicação em tempo real, persistência de mensagens e envio de imagens. Atuação em todo o ciclo de desenvolvimento, desde a estruturação da aplicação até a implementação das funcionalidades, testes e deploy em produção.
     `,
   },
 ];

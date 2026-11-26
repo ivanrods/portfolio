@@ -7,21 +7,21 @@ const services = [
   {
     title: "Desenvolvimento Front-End",
     description:
-      "Desenvolvimento de interfaces modernas e responsivas com React e Next.js, priorizando performance, acessibilidade e excelente experiência do usuário. Criação de layouts bem estruturados, componentes reutilizáveis e aplicações com foco em usabilidade e fluidez.",
+      "Desenvolvimento de aplicações web modernas e responsivas com React, Next.js e TypeScript. Criação de interfaces intuitivas, componentes reutilizáveis e layouts adaptáveis, utilizando boas práticas de componentização, gerenciamento de estado e otimização de performance. Foco em acessibilidade, usabilidade e experiência do usuário.",
     position: "self-start",
     icon: FaCode,
   },
   {
     title: "Desenvolvimento Back-End",
     description:
-      "Construção de APIs seguras e bem estruturadas com Node.js e Express, implementando autenticação, controle de acesso e integração com banco de dados. Foco em organização de código, escalabilidade e comunicação eficiente entre front-end e servidor.",
+      "Desenvolvimento de APIs REST e regras de negócio com Node.js e Express. Implementação de autenticação, autorização, validação de dados e integração com bancos de dados relacionais e não relacionais. Foco em segurança, organização da arquitetura, separação de responsabilidades e manutenção do código.",
     position: "self-end",
     icon: TbCodeDots,
   },
   {
     title: "Integração e Deploy",
     description:
-      "Integração entre front-end e back-end utilizando APIs REST, garantindo comunicação eficiente e dados consistentes. Deploy de aplicações em ambiente de produção, priorizando estabilidade, desempenho e boas práticas.",
+      "Integração entre aplicações e serviços por meio de APIs, garantindo comunicação eficiente e consistência dos dados. Configuração de ambientes, gerenciamento de variáveis, versionamento com Git e publicação de aplicações em produção. Aplicação de boas práticas para garantir estabilidade, confiabilidade e facilidade de manutenção.",
     position: "self-start",
     icon: AiOutlineApi,
   },

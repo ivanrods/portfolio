@@ -34,7 +34,7 @@ function Home() {
             <a
               href="curriculo-ivan-rodrigues.pdf"
               download
-              className="group rounded-xl bg-custom-color px-6 py-3 text-md font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-custom-color/40 flex items-center gap-3"
+              className="group rounded-xl bg-custom-color px-6 py-3 text-md font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl  flex items-center gap-3"
             >
               Download CV
               <LuDownload className="transition-transform duration-300 group-hover:translate-y-1" />

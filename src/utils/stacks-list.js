@@ -23,6 +23,7 @@ import {
   SiTestinglibrary,
   SiCypress,
   SiReactquery,
+  SiInfinityfree,
 } from "react-icons/si";
 
 export const techList = [
@@ -190,6 +191,13 @@ export const techList = [
     componente: SiDocker,
     descricao:
       "Conteinerização de aplicações para garantir consistência e portabilidade em diferentes ambientes de desenvolvimento e produção.",
+  },
+  {
+    nome: "CI/CD",
+    cor: "text-purple-600",
+    componente: SiInfinityfree,
+    descricao:
+      "Integração contínua e implantação contínua para automatizar o processo de entrega de software.",
   },
   {
     nome: "Figma",

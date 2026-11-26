@@ -50,12 +50,17 @@ function About() {
 
             <p className="text-md lg:text-lg">Desenvolvedor Full Stack</p>
             <p className="text-neutral-300 leading-relaxed  md:text-left hover:text-neutral-300">
-              Sou Desenvolvedor Full Stack com foco no ecossistema JavaScript,
-              construindo aplicações modernas com React, Next.js e Node.js Tenho
-              experiência na criação de sistemas completos, desde interfaces
-              performáticas até APIs seguras e bem estruturadas. Meu objetivo é
-              desenvolver soluções escaláveis, com código limpo, boas práticas e
-              excelente experiência do usuário.
+              Sou Desenvolvedor Full Stack, com foco no ecossistema JavaScript e
+              experiência prática no desenvolvimento de aplicações web
+              utilizando React, Next.js, TypeScript e Node.js. Atuo em
+              diferentes etapas do desenvolvimento, desde a criação de
+              interfaces modernas, responsivas e intuitivas até a implementação
+              de APIs, integração com bancos de dados e funcionalidades de
+              back-end. Tenho interesse em arquitetura de software, qualidade de
+              código, boas práticas e construção de soluções eficientes. Busco
+              constantemente aprimorar minhas habilidades técnicas, desenvolver
+              soluções que resolvam problemas reais e evoluir profissionalmente,
+              contribuindo com projetos e equipes de desenvolvimento.
             </p>
 
             <div className="flex gap-4 flex-wrap">
